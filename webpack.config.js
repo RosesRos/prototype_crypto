@@ -73,11 +73,7 @@ const plugins = () => {
         new CopyWebpackPlugin({
             patterns: [
                 {
-                    from: path.resolve(__dirname, "src/assets/etherum.png"),
-                    to: path.resolve(__dirname, "dist/assets"),
-                },
-                {
-                    from: path.resolve(__dirname, "src/assets/Facebook.svg"),
+                    from: path.resolve(__dirname, "src/assets/logo.jpg"),
                     to: path.resolve(__dirname, "dist/assets"),
                 },
             ]

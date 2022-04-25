@@ -1,41 +1,26 @@
 @import "~normalize.css";
-// @import "scss/fontawesome.scss";
 @import "fonts";
+@import "variables";
 
 :root {
-    // --mainColor: #12345678;
-    --secondColor: #c203bc78;
-    --fourColor: rebeccapurple;
-    --mainWeight: bold;
+    --mainColor: #0D1C32;
+    --colorText: #5C7295;
+    --wraper-margin: 0 auto;
 }
   
 body {
-    color: lch(53 105 40);
-    font-family: system-ui;
-    background-color: var(--secondColor);
+    color: var(--colorText);
+    font-family: UbuntuLigh, sans-serif;
+    background-color: var(--mainColor);
+}
+
+.main {
+    margin: var(--wraper-margin);
+    overflow: hidden;
 }
 
 
-a {
-    color: rgb(0 0 100% / 90%);
-  
-    &:hover {
-      color: var(--fourColor);
-    }
-  
-    & span {
-        font-weight: var(--mainWeight);
-    }
-}
-  
-::placeholder {
-    color: yellowgreen;
-}
-
-.fa-facebook {
-    color: var(--fourColor);
-    &:hover {
-        color: var(--secondColor);
-        cursor: pointer;
-    }
+.fa-angle-down {
+    padding-left: 0.5rem;
+    font-size: 1.4rem;
 }
