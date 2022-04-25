@@ -19,7 +19,7 @@ const {classes} = jss.createStyleSheet(styles).attach();
 const Text = () => {
     return `
         <h1 class=${classes.text}>
-            hello fabio with jss
+            i know that i will be a good programmer
             <img class=${classes.icon} src="${imgSvg}"/>
             <a href="#"> <i class="fab fa-facebook"></i></a>
             <a href="#"> <i class="fab fa-twitter"></i></a>
