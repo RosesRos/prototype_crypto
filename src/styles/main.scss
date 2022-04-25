@@ -1,0 +1,41 @@
+@import "~normalize.css";
+// @import "scss/fontawesome.scss";
+@import "fonts";
+
+:root {
+    // --mainColor: #12345678;
+    --secondColor: #c203bc78;
+    --fourColor: rebeccapurple;
+    --mainWeight: bold;
+}
+  
+body {
+    color: lch(53 105 40);
+    font-family: system-ui;
+    background-color: var(--secondColor);
+}
+
+
+a {
+    color: rgb(0 0 100% / 90%);
+  
+    &:hover {
+      color: var(--fourColor);
+    }
+  
+    & span {
+        font-weight: var(--mainWeight);
+    }
+}
+  
+::placeholder {
+    color: yellowgreen;
+}
+
+.fa-facebook {
+    color: var(--fourColor);
+    &:hover {
+        color: var(--secondColor);
+        cursor: pointer;
+    }
+}
