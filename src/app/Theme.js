@@ -10,4 +10,5 @@ export const colors = {
     bgPercent2: "#6233B0",
     bgCard: "#06070A",
     bgCard2: "#131823",
+    white: "#FEFEFF",
 }

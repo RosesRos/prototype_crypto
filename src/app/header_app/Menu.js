@@ -12,6 +12,7 @@ jss.setup({createGenerateId});
 const styles = {
     nav: {
         overflow: "hidden",
+        marginRight: "20%",
     },
     nav_list: {
         display: "flex",
@@ -65,7 +66,7 @@ const Menu = () => {
         <nav class=${classes.nav}>
             <div class=${classes.nav_list}>
                 <div class=${classes.nav_content}>
-                    <button class=${classes.nav_item} id="item1">
+                    <button class=${classes.nav_item}>
                         Trade <i class="fa-solid fa-angle-down"></i> 
                     </button>
                     <ul class=${classes.nav_list_sub}>

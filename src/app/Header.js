@@ -1,6 +1,8 @@
 import jss from "jss";
 import Logo from "./header_app/Logo";
 import Menu from "./header_app/Menu";
+import MenuBtn from "./header_app/MenuBtn";
+
 
 const createGenerateId = () => {
     return (rule) => `${rule.key}`; 
@@ -13,7 +15,7 @@ const styles = {
         margin: "0 auto",
     },
     header_inner: {
-        display: "inline-flex",
+        display: "flex",
         justifyContent: "space-between",
         alignItems: "flex-start",
         paddingTop: "1rem",
@@ -28,6 +30,7 @@ const Header = () => {
             <div class=${classes.header_inner}>
                 ${Logo()}
                 ${Menu()}
+                ${MenuBtn()}
             </div>
         </header>
     `
