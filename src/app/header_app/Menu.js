@@ -16,6 +16,8 @@ const styles = {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "flex-start",
+        margin: [0, "auto"],
+        paddingLeft: "1rem",
     },
     nav_item: {
         padding: "1rem",
