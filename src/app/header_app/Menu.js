@@ -39,7 +39,7 @@ const styles = {
     },
     nav_list_sub: {
         paddingLeft: 0,
-        marginTop: "1rem",
+        marginTop: "0.5rem",
         borderRadius: "0.5rem",
         backgroundColor: colors.bgCard2,
         display: "none",
@@ -115,10 +115,35 @@ const Menu = () => {
 }
 
 $(function() {
-    var first = $(".nav_item:eq(0)");
-    first.on("click", function() {
-        var item1 = $(".nav_list_sub:eq(0)");
-        item1.toggle();
+    var item1 = $(".nav_item:eq(0)");
+    var item2 = $(".nav_item:eq(1)");
+    var item3 = $(".nav_item:eq(2)");
+    var item4 = $(".nav_item:eq(3)");
+    var item5 = $(".nav_item:eq(4)");
+
+    item1.on("click", function() {
+        var list1 = $(".nav_list_sub:eq(0)");
+        list1.toggle();
+    })
+    
+    item2.on("click", function() {
+        var list2 = $(".nav_list_sub:eq(1)");
+        list2.toggle();
+    })
+
+    item3.on("click", function() {
+        var list3 = $(".nav_list_sub:eq(2)");
+        list3.toggle();
+    })
+
+    item4.on("click", function() {
+        var list4 = $(".nav_list_sub:eq(3)");
+        list4.toggle();
+    })
+
+    item5.on("click", function() {
+        var list5 = $(".nav_list_sub:eq(4)");
+        list5.toggle();
     })
 })
 
