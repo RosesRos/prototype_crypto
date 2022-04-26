@@ -16,6 +16,7 @@ const styles = {
         display: "inline-flex",
         justifyContent: "space-between",
         alignItems: "flex-start",
+        paddingTop: "1rem",
     }
 }
 

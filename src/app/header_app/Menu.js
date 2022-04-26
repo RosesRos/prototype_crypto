@@ -1,6 +1,7 @@
 import jss from "jss";
 import { colors } from "../Theme";
 import { DataMenu } from "./DataMenu";
+import * as $ from "jquery";
 
 const createGenerateId = () => {
     return (rule) => `${rule.key}`; 
@@ -23,13 +24,19 @@ const styles = {
         padding: "1rem",
         listStyle: "none",
         margin: [0 , "auto"],
-        outline: "none",      
+        outline: "none",  
+        "&:hover": {
+            backgroundColor: colors.bgCard2,
+            cursor: "pointer",
+            borderRadius: "0.5rem",
+        }    
     },
     nav_list_sub: {
         paddingLeft: 0,
         marginTop: "1rem",
         borderRadius: "0.5rem",
         backgroundColor: colors.bgCard2,
+        display: "none",
     },
     nav_item_sub: {
         listStyle: "none",
@@ -39,6 +46,7 @@ const styles = {
         "&:hover": {
             backgroundColor: colors.bgCard,
             cursor: "pointer",
+            borderRadius: "0.5rem",
         }
     }
 }
