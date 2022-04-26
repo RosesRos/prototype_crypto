@@ -1,5 +1,6 @@
 import jss from "jss";
-import { colors } from "../Theme";
+// import { colors } from "../Theme";
+import { DataMenu } from "./DataMenu";
 
 const createGenerateId = () => {
     return (rule) => `${rule.key}`; 
@@ -14,46 +15,61 @@ const styles = {
     nav_list: {
         display: "flex",
         justifyContent: "space-between",
-        alignItems: "center",
+        alignItems: "flex-start",
     },
     nav_item: {
         padding: "1rem",
         listStyle: "none",
-        margin: "0 auto",      
+        margin: [0 , "auto"],      
     },
-    nav_link: {
-        display: "inline-block",
-        margin: "0 auto",
-        color: colors.bgText,
-        // FontSize: "2rem",
-        textDecoration: "none",
-        paddingRight: "1rem",
+    nav_list_sub: {
+        paddingLeft: 0,
+    },
+    nav_item_sub: {
+        listStyle: "none",
+        margin: [0, "auto"],
     }
 }
 
 const {classes} = jss.createStyleSheet(styles).attach();
+
 
 const Menu = () => {
     return `
         <nav class=${classes.nav}>
             <ul class=${classes.nav_list}>
                 <li class=${classes.nav_item}>
-                    <a class=${classes.nav_link} href="#">Trade <i class="fa-solid fa-angle-down"></i> </a>
+                    Trade <i class="fa-solid fa-angle-down"></i> 
+                    <ul class=${classes.nav_list_sub}>
+                        ${DataMenu.map((d) => `<li class=${classes.nav_item_sub} key=${d.id}>${d.coco}</li>`)}
+                    </ul>
                 </li>
                 <li class=${classes.nav_item}>
-                    <a class=${classes.nav_link} href="#">DAO <i class="fa-solid fa-angle-down"></i></a>
+                    DAO <i class="fa-solid fa-angle-down"></i>
+                    <ul class=${classes.nav_list_sub}>
+                    ${DataMenu.map((d) => `<li class=${classes.nav_item_sub} key="${d.id}">${d.coco}</li>`)}
+                    </ul>
                 </li>
                 <li class=${classes.nav_item}>
-                    <a class=${classes.nav_link} href="#">Ear <i class="fa-solid fa-angle-down"></i></a>
+                    Ear <i class="fa-solid fa-angle-down"></i>
+                    <ul class=${classes.nav_list_sub}>
+                    ${DataMenu.map((d) => `<li class=${classes.nav_item_sub} key="${d.id}">${d.coco}</li>`)}
+                    </ul>
                 </li>
                 <li class=${classes.nav_item}>
-                    <a class=${classes.nav_link} href="#">More <i class="fa-solid fa-angle-down"></i></a>
+                    More <i class="fa-solid fa-angle-down"></i>
+                    <ul class=${classes.nav_list_sub}>
+                    ${DataMenu.map((d) => `<li class=${classes.nav_item_sub} key="${d.id}">${d.coco}</li>`)}
+                    </ul>
                 </li>
                 <li class=${classes.nav_item}>
-                    <a class=${classes.nav_link} href="#">Bridges <i class="fa-solid fa-angle-down"></i></a>
+                    Bridges <i class="fa-solid fa-angle-down"></i>
+                    <ul class=${classes.nav_list_sub}>
+                    ${DataMenu.map((d) => `<li class=${classes.nav_item_sub} key="${d.id}">${d.coco}</li>`)}
+                    </ul>
                 </li>
                 <li class=${classes.nav_item}>
-                    <a class=${classes.nav_link} href="#">Buy ETH </a>
+                    Buy ETH <sup><i class="fa-solid fa-star"></i></sup>
                 </li>
             </ul>
         </nav>
@@ -61,3 +77,4 @@ const Menu = () => {
 }
 
 export default Menu;
+

@@ -5,6 +5,7 @@
 :root {
     --mainColor: #0D1C32;
     --colorText: #5C7295;
+    --colorStar: red;
     --wraper-margin: 0 auto;
 }
   
@@ -23,4 +24,9 @@ body {
 .fa-angle-down {
     padding-left: 0.5rem;
     font-size: 1.4rem;
+}
+
+.fa-star {
+    color: var(--colorStar);
+    font-size: 0.8rem;
 }
