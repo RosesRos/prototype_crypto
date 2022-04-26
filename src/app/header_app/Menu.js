@@ -1,5 +1,5 @@
 import jss from "jss";
-// import { colors } from "../Theme";
+import { colors } from "../Theme";
 import { DataMenu } from "./DataMenu";
 
 const createGenerateId = () => {
@@ -26,12 +26,18 @@ const styles = {
     nav_list_sub: {
         paddingLeft: 0,
         marginTop: "1rem",
+        borderRadius: "0.5rem",
+        backgroundColor: colors.bgCard2,
     },
     nav_item_sub: {
         listStyle: "none",
         margin: [0, "auto"],
         padding: "1rem",
-        paddingLeft: 0,
+        // paddingLeft: 0.5,
+        "&:hover": {
+            backgroundColor: colors.bgCard,
+            cursor: "pointer",
+        }
     }
 }
 

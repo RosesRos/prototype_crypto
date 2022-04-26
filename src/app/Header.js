@@ -15,7 +15,7 @@ const styles = {
     header_inner: {
         display: "inline-flex",
         justifyContent: "space-between",
-        alignItems: "center",
+        alignItems: "flex-start",
     }
 }
 
