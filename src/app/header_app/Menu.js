@@ -41,31 +41,31 @@ const Menu = () => {
                 <li class=${classes.nav_item}>
                     Trade <i class="fa-solid fa-angle-down"></i> 
                     <ul class=${classes.nav_list_sub}>
-                        ${DataMenu.map((d) => `<li class=${classes.nav_item_sub} key=${d.id}>${d.coco}</li>`)}
+                        ${DataMenu.map((d) => `<li class=${classes.nav_item_sub} key=${d.id}>${d.coco}</li>`).join(" ")}
                     </ul>
                 </li>
                 <li class=${classes.nav_item}>
                     DAO <i class="fa-solid fa-angle-down"></i>
                     <ul class=${classes.nav_list_sub}>
-                    ${DataMenu.map((d) => `<li class=${classes.nav_item_sub} key="${d.id}">${d.coco}</li>`)}
+                    ${DataMenu.map((d) => `<li class=${classes.nav_item_sub} key="${d.id}">${d.coco}</li>`).join(" ")}
                     </ul>
                 </li>
                 <li class=${classes.nav_item}>
                     Ear <i class="fa-solid fa-angle-down"></i>
                     <ul class=${classes.nav_list_sub}>
-                    ${DataMenu.map((d) => `<li class=${classes.nav_item_sub} key="${d.id}">${d.coco}</li>`)}
+                    ${DataMenu.map((d) => `<li class=${classes.nav_item_sub} key="${d.id}">${d.coco}</li>`).join(" ")}
                     </ul>
                 </li>
                 <li class=${classes.nav_item}>
                     More <i class="fa-solid fa-angle-down"></i>
                     <ul class=${classes.nav_list_sub}>
-                    ${DataMenu.map((d) => `<li class=${classes.nav_item_sub} key="${d.id}">${d.coco}</li>`)}
+                    ${DataMenu.map((d) => `<li class=${classes.nav_item_sub} key="${d.id}">${d.coco}</li>`).join(" ")}
                     </ul>
                 </li>
                 <li class=${classes.nav_item}>
                     Bridges <i class="fa-solid fa-angle-down"></i>
                     <ul class=${classes.nav_list_sub}>
-                    ${DataMenu.map((d) => `<li class=${classes.nav_item_sub} key="${d.id}">${d.coco}</li>`)}
+                    ${DataMenu.map((d) => `<li class=${classes.nav_item_sub} key="${d.id}">${d.coco}</li>`).join(" ")}
                     </ul>
                 </li>
                 <li class=${classes.nav_item}>
