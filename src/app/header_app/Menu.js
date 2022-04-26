@@ -20,14 +20,18 @@ const styles = {
     nav_item: {
         padding: "1rem",
         listStyle: "none",
-        margin: [0 , "auto"],      
+        margin: [0 , "auto"],
+        outline: "none",      
     },
     nav_list_sub: {
         paddingLeft: 0,
+        marginTop: "1rem",
     },
     nav_item_sub: {
         listStyle: "none",
         margin: [0, "auto"],
+        padding: "1rem",
+        paddingLeft: 0,
     }
 }
 
