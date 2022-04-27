@@ -24,6 +24,7 @@ const styles = {
         height: "30rem",
         borderRadius: "2rem",
         padding: ["1rem", "0.5rem"],
+        zIndex: 0,
         // marginTop: "10%",
     },
     card_header: {

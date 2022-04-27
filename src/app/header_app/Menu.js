@@ -50,6 +50,7 @@ const styles = {
         display: "none",
         overflow: "auto",
         width: "20rem",
+        zIndex: 5
     },
     nav_item_sub: {
         listStyle: "none",
