@@ -27,6 +27,7 @@ const styles = {
     },
     nav_content: {
         width: "10rem",
+        zIndex: 5
     },
     nav_item: {
         padding: "1rem",
@@ -50,7 +51,6 @@ const styles = {
         display: "none",
         overflow: "auto",
         width: "20rem",
-        zIndex: 5
     },
     nav_item_sub: {
         listStyle: "none",
