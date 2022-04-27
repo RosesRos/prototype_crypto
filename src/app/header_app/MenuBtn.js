@@ -1,6 +1,6 @@
 import jss from "jss";
 import { colors } from "../Theme";
-import { DataMenu } from "./DataMenu";
+import { Ethe } from "./DataMenu";
 import * as $ from "jquery";
 
 const createGenerateId = () => {
@@ -93,7 +93,7 @@ const MenuBtn = () => {
                         <i class="fa-solid fa-angle-down"></i>
                     </button>
                     <ul class=${classes.nav_list_sub_btn}>
-                        ${DataMenu.map((d) => `<li class=${classes.nav_item_sub_btn} key=${d.id}>${d.coco}</li>`).join(" ")}
+                        ${Ethe.map((d) => `<li class=${classes.nav_item_sub_btn} key=${d.id}>${d.ethe}</li>`).join(" ")}
                     </ul>
                 </div>
                 <div class=${classes.nav_btn_content}>

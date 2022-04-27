@@ -1,6 +1,10 @@
 import jss from "jss";
 import { colors } from "../Theme";
-import { DataMenu } from "./DataMenu";
+import { Trade } from "./DataMenu";
+import { Dao } from "./DataMenu";
+import { Ear } from "./DataMenu";
+import { More } from "./DataMenu";
+import { Bridges } from "./DataMenu";
 import * as $ from "jquery";
 
 const createGenerateId = () => {
@@ -45,12 +49,12 @@ const styles = {
         backgroundColor: colors.bgCard2,
         display: "none",
         overflow: "auto",
+        width: "20rem",
     },
     nav_item_sub: {
         listStyle: "none",
         margin: [0, "auto"],
         padding: "1rem",
-        textAlign: "center",
         "&:hover": {
             backgroundColor: colors.bgCard,
             cursor: "pointer",
@@ -70,7 +74,7 @@ const Menu = () => {
                         Trade <i class="fa-solid fa-angle-down"></i> 
                     </button>
                     <ul class=${classes.nav_list_sub}>
-                        ${DataMenu.map((d) => `<li class=${classes.nav_item_sub} key=${d.id}>${d.coco}</li>`).join(" ")}
+                        ${Trade.map((d) => `<li class=${classes.nav_item_sub} key=${d.id}>${d.trade}</li>`).join(" ")}
                     </ul>
                 </div>
                 <div class=${classes.nav_content}>
@@ -78,7 +82,7 @@ const Menu = () => {
                         DAO <i class="fa-solid fa-angle-down"></i>
                     </button>
                     <ul class=${classes.nav_list_sub}>
-                        ${DataMenu.map((d) => `<li class=${classes.nav_item_sub} key="${d.id}">${d.coco}</li>`).join(" ")}
+                        ${Dao.map((d) => `<li class=${classes.nav_item_sub} key=${d.id}>${d.dao}</li>`).join(" ")}
                     </ul>
                 </div>
                 <div class=${classes.nav_content}>
@@ -86,7 +90,7 @@ const Menu = () => {
                         Ear <i class="fa-solid fa-angle-down"></i>
                     </button>
                     <ul class=${classes.nav_list_sub}>
-                        ${DataMenu.map((d) => `<li class=${classes.nav_item_sub} key="${d.id}">${d.coco}</li>`).join(" ")}
+                        ${Ear.map((d) => `<li class=${classes.nav_item_sub} key=${d.id}>${d.ear}</li>`).join(" ")}
                     </ul>
                 </div>
                 <div class=${classes.nav_content}>
@@ -94,7 +98,7 @@ const Menu = () => {
                         More <i class="fa-solid fa-angle-down"></i>
                     </button>
                     <ul class=${classes.nav_list_sub}>
-                        ${DataMenu.map((d) => `<li class=${classes.nav_item_sub} key="${d.id}">${d.coco}</li>`).join(" ")}
+                        ${More.map((d) => `<li class=${classes.nav_item_sub} key=${d.id}>${d.more}</li>`).join(" ")}
                     </ul>
                 </div>
                 <div class=${classes.nav_content}>
@@ -102,7 +106,7 @@ const Menu = () => {
                         Bridges <i class="fa-solid fa-angle-down"></i>
                     </button>
                     <ul class=${classes.nav_list_sub}>
-                        ${DataMenu.map((d) => `<li class=${classes.nav_item_sub} key="${d.id}">${d.coco}</li>`).join(" ")}
+                        ${Bridges.map((d) => `<li class=${classes.nav_item_sub} key=${d.id}>${d.bridge}</li>`).join(" ")}
                     </ul>
                 </div>
                 <div class=${classes.nav_content}>
