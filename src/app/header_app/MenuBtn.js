@@ -54,6 +54,7 @@ const styles = {
         cursor: "pointer",
         background: `linear-gradient(to right, ${colors.bgEthe} 0%, ${colors.bgEthe2} 100%)`,
         borderRadius: "1rem",
+        fontWeight: 500,
         "&:hover": {
             background: `linear-gradient(to right, ${colors.bgEthe2} 0%, ${colors.bgEthe} 100%)`
         }
