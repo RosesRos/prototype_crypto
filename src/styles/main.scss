@@ -7,6 +7,7 @@
     --colorText: #5C7295;
     --colorStar: red;
     --wraper-margin: 0 auto;
+    --colorSetting: #09897B;
 }
   
 body {
@@ -29,4 +30,18 @@ body {
 .fa-star {
     color: var(--colorStar);
     font-size: 0.5rem;
+}
+
+.fa-ethereum {
+    padding-right: 1rem;
+}
+
+.fa-wallet {
+    padding-right: 1rem;
+}
+
+.fa-gear {
+    &:hover {
+        color: var(--colorSetting);
+    }
 }

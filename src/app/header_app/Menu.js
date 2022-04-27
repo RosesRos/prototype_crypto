@@ -35,13 +35,13 @@ const styles = {
         "&:hover": {
             backgroundColor: colors.bgCard2,
             cursor: "pointer",
-            borderRadius: "0.5rem",
+            borderRadius: "1rem",
         }    
     },
     nav_list_sub: {
         paddingLeft: 0,
         marginTop: "0.5rem",
-        borderRadius: "0.5rem",
+        borderRadius: "1rem",
         backgroundColor: colors.bgCard2,
         display: "none",
         overflow: "auto",
@@ -54,7 +54,7 @@ const styles = {
         "&:hover": {
             backgroundColor: colors.bgCard,
             cursor: "pointer",
-            borderRadius: "0.5rem",
+            borderRadius: "1rem",
         }
     }
 }
