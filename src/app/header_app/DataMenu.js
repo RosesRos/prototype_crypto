@@ -105,27 +105,27 @@ export const Bridges = [
     {
         id: 2,
         bridge: "Polygon bridge",
-        img: `<i class="fa-solid fa-link-simple"></i>`,
+        img: `<i class="fa-brands fa-steam-square"></i>`,
     },
     {
         id: 3,
         bridge: "Optimism bridge",
-        img: `<i class="fa-solid fa-hand-holding-medical"></i>`,
+        img: `<i class="fa-solid fa-dice-d6"></i>`,
     },
     {
         id: 4,
         bridge: "Arbitrum bridge",
-        img: `<i class="fa-solid fa-hand-holding-medical"></i>`,
+        img: `<i class="fa-solid fa-dice"></i>`,
     },
     {
         id: 5,
         bridge: "Gnosis Chain bridge",
-        img: `<i class="fa-solid fa-hand-holding-medical"></i>`,
+        img: `<i class="fa-solid fa-dice-d20"></i>`,
     },
     {
         id: 6,
         bridge: "Avalanche bridge",
-        img: `<i class="fa-solid fa-hand-holding-medical"></i>`,
+        img: `<i class="fa-solid fa-gear"></i>`,
     },
 ]
 
