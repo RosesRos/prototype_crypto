@@ -1,12 +1,13 @@
 # prototype_crypto
 
-project is in state deployment
+the project is under development
 
 this project presents a simple prototype of web app for crypto
 ## with
 
 - JavaScript
 - Jss for styles
+- JQuery
 - Pug for html
 - Webpack for bandler
 - Sass for global styles
