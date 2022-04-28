@@ -123,7 +123,7 @@ export const Ethe = [
     },
     {
         id: 4,
-        ethee: "Optimism"
+        ethe: "Optimism"
     },
     {
         id: 5,
