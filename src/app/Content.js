@@ -84,6 +84,7 @@ const Content = () => {
                     </div>
                 </div>
                 ${CardOne()}
+                <span><i class="fa-solid fa-arrow-down"></i></span>
             </div>
         </section>
     `
