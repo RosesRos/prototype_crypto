@@ -69,13 +69,25 @@ const styles = {
         width: "100%",
         borderRadius: "2rem",
         marginTop: "2rem",
-        display: "flex",
-        justifyContent: "space-between",
+        // display: "flex",
+        // justifyContent: "space-between",
     },
     card_body_first_content: {
-        display: "inline-flex",
-        flexDirection: "column",
-        margin: [0, 2]
+        display: "flex",
+        justifyContent: "space-between",
+        margin: ["2.5rem", 2],
+        "&:nth-child(3)": {
+            marginBottom: "auto",
+        }
+    },
+    card_body_first_text: {
+        fontSize: "1.4rem",
+        "&:hover": {
+            color: colors.white,
+        }
+    },
+    card_body_first_num: {
+        fontSize: "1.4rem",
     }
 }
 
@@ -97,15 +109,20 @@ const Content = () => {
                     </div>
                 </div>
                 <div class=${classes.card_body_first}>
-                   <div class=${classes.card_body_first_content}>
-                        <span>You Sell</span>
-                        <button>Eth <i class="fa-solid fa-angle-down"></i> </button>
-                        <span>Etherum</span>
-                   </div>
-                   <div class=${classes.card_body_first_content}>
+                    <div>
+                        <span class=${classes.card_body_first_text}>You sell</span>
+                    </div>
+                    <div class=${classes.card_body_first_content}>
+                        <button>
+                            <i class="fa-brands fa-ethereum"></i>
+                            ETH
+                            <i class="fa-solid fa-angle-down"></i> </button>
                         <input></input>
-                        <span>75895858</span>
-                   </div>
+                    </div>
+                    <div class=${classes.card_body_first_content}>
+                        <span class=${classes.card_body_first_text}>Ethereum</span>
+                        <span class=${classes.card_body_first_num}>75895858</span>
+                    </div>
                 </div>
             </div>
         </section>
