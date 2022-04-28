@@ -60,7 +60,11 @@ const styles = {
             backgroundColor: colors.bgCard,
             cursor: "pointer",
             borderRadius: "1rem",
+            color: colors.white,
         }
+    },
+    nav_item_sub_icon: {
+        paddingRight: "1rem",
     },
     arrow: {
         transform: "rotateX(150deg)",
@@ -78,7 +82,7 @@ const Menu = () => {
                         Trade <i class="fa-solid fa-angle-down"></i> 
                     </button>
                     <ul class=${classes.nav_list_sub}>
-                        ${Trade.map((d) => `<li class=${classes.nav_item_sub} key=${d.id}>${d.trade}</li>`).join(" ")}
+                        ${Trade.map((d) => `<li class=${classes.nav_item_sub} key=${d.id}><span class=${classes.nav_item_sub_icon}>${d.img}</span>${d.trade}</li>`).join(" ")}
                     </ul>
                 </div>
                 <div class=${classes.nav_content}>

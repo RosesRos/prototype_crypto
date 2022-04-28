@@ -2,19 +2,23 @@
 export const Trade = [
     {
         id: 1,
-        trade: "Simple mode"
+        trade: "Simple mode",
+        img: `<i class="fa-brands fa-usps"></i>`,
     },
     {
         id: 2,
-        trade: "Classic mode"
+        trade: "Classic mode",
+        img: `<i class="fa-solid fa-asterisk"></i>`,
     },
     {
         id: 3,
-        trade: "Limit order"
+        trade: "Limit order",
+        img: `<i class="fa-solid fa-shop-slash"></i>`,
     },
     {
         id: 4,
         trade: "P2P deal",
+        img: `<i class="fa-solid fa-shop"></i>`,
     }
 ]
 
