@@ -65,6 +65,18 @@ const styles = {
     },
     nav_item_sub_icon: {
         paddingRight: "1rem",
+        
+    },
+    nav_item_sub_icons: {
+        // backgroundColor: `${colors.bgPrice}`,
+        borderRadius: "50%",
+        padding: "0.5rem",
+        // paddingTop: "0.4rem",
+        fontSize: "1rem",
+        width: "2rem",
+        height: "2rem",
+        marginRight: "0.5rem",
+        color: colors.white
     },
     arrow: {
         transform: "rotateX(150deg)",
@@ -90,7 +102,7 @@ const Menu = () => {
                         DAO <i class="fa-solid fa-angle-down"></i>
                     </button>
                     <ul class=${classes.nav_list_sub}>
-                        ${Dao.map((d) => `<li class=${classes.nav_item_sub} key=${d.id}>${d.dao}</li>`).join(" ")}
+                        ${Dao.map((d) => `<li class=${classes.nav_item_sub} key=${d.id}><span class=${classes.nav_item_sub_icon}>${d.img}</span>${d.dao}</li>`).join(" ")}
                     </ul>
                 </div>
                 <div class=${classes.nav_content}>
@@ -98,7 +110,7 @@ const Menu = () => {
                         Ear <i class="fa-solid fa-angle-down"></i>
                     </button>
                     <ul class=${classes.nav_list_sub}>
-                        ${Ear.map((d) => `<li class=${classes.nav_item_sub} key=${d.id}>${d.ear}</li>`).join(" ")}
+                        ${Ear.map((d) => `<li class=${classes.nav_item_sub} key=${d.id}><span class=${classes.nav_item_sub_icon}>${d.img}</span>${d.ear}</li>`).join(" ")}
                     </ul>
                 </div>
                 <div class=${classes.nav_content}>
@@ -106,7 +118,7 @@ const Menu = () => {
                         More <i class="fa-solid fa-angle-down"></i>
                     </button>
                     <ul class=${classes.nav_list_sub}>
-                        ${More.map((d) => `<li class=${classes.nav_item_sub} key=${d.id}>${d.more}</li>`).join(" ")}
+                        ${More.map((d) => `<li class=${classes.nav_item_sub} key=${d.id}><span class=${classes.nav_item_sub_icon}>${d.img}</span>${d.more}</li>`).join(" ")}
                     </ul>
                 </div>
                 <div class=${classes.nav_content}>
@@ -114,7 +126,7 @@ const Menu = () => {
                         Bridges <i class="fa-solid fa-angle-down"></i>
                     </button>
                     <ul class=${classes.nav_list_sub}>
-                        ${Bridges.map((d) => `<li class=${classes.nav_item_sub} key=${d.id}>${d.bridge}</li>`).join(" ")}
+                        ${Bridges.map((d) => `<li class=${classes.nav_item_sub} key=${d.id}><span class=${classes.nav_item_sub_icons}>${d.img}</span>${d.bridge}</li>`).join(" ")}
                     </ul>
                 </div>
                 <div class=${classes.nav_content}>
@@ -163,6 +175,9 @@ $(function() {
         list5.toggle();
         $(".fa-angle-down:eq(4)").toggleClass(`${classes.arrow}`);
     })
+    
+    var icon1 = $(".nav_item_sub_icons:eq(0)");
+    icon1.css("background-color", `${colors.bgPrice}`);
 })
 
 export default Menu;

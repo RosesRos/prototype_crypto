@@ -25,19 +25,23 @@ export const Trade = [
 export const Dao = [
     {
         id: 1,
-        dao: "Staking"
+        dao: "Staking",
+        img: `<i class="fa-solid fa-seedling"></i>`,
     },
     {
         id: 2,
-        dao: "Liquidity Protocol"
+        dao: "Liquidity Protocol",
+        img: `<i class="fa-solid fa-spa"></i>`,
     },
     {
         id: 3,
-        dao: "Aggregation Protocol"
+        dao: "Aggregation Protocol",
+        img: `<i class="fa-solid fa-fan"></i>`,
     },
     {
         id: 4,
         dao: "Forum",
+        img: `<i class="fa-solid fa-pencil"></i>`,
     }
 ]
 
@@ -45,15 +49,18 @@ export const Dao = [
 export const Ear = [
     {
         id: 1,
-        ear: "Strategies"
+        ear: "Strategies",
+        img: `<i class="fa-solid fa-hammer"></i>`,
     },
     {
         id: 2,
-        ear: "Pools"
+        ear: "Pools",
+        img: `<i class="fa-solid fa-gears"></i>`,
     },
     {
         id: 3,
-        ear: "Farming"
+        ear: "Farming",
+        img: `<i class="fa-solid fa-screwdriver-wrench"></i>`,
     },
 ]
 
@@ -62,23 +69,28 @@ export const Ear = [
 export const More = [
     {
         id: 1,
-        more: "Documentation"
+        more: "Documentation",
+        img: `<i class="fa-solid fa-terminal"></i>`,
     },
     {
         id: 2,
-        more: "Blog"
+        more: "Blog",
+        img: `<i class="fa-solid fa-comment-dots"></i>`,
     },
     {
         id: 3,
-        more: "Help"
+        more: "Help",
+        img: `<i class="fa-solid fa-circle-question"></i>`,
     },
     {
         id: 4,
-        more: "IPFS deployment"
+        more: "IPFS deployment",
+        img: `<i class="fa-solid fa-circle-info"></i>`,
     },
     {
         id: 5,
-        more: "Skynet deployment"
+        more: "Skynet deployment",
+        img: `<i class="fa-solid fa-hand-holding-medical"></i>`,
     },
 ]
 
@@ -87,27 +99,33 @@ export const More = [
 export const Bridges = [
     {
         id: 1,
-        bridge: "BNB Chain bridge"
+        bridge: "BNB Chain bridge",
+        img: `<i class="fa-solid fa-link"></i>`,
     },
     {
         id: 2,
-        bridge: "Polygon bridge"
+        bridge: "Polygon bridge",
+        img: `<i class="fa-solid fa-link-simple"></i>`,
     },
     {
         id: 3,
-        bridge: "Optimism bridge"
+        bridge: "Optimism bridge",
+        img: `<i class="fa-solid fa-hand-holding-medical"></i>`,
     },
     {
         id: 4,
-        bridge: "Arbitrum bridge"
+        bridge: "Arbitrum bridge",
+        img: `<i class="fa-solid fa-hand-holding-medical"></i>`,
     },
     {
         id: 5,
-        bridge: "Gnosis Chain bridge"
+        bridge: "Gnosis Chain bridge",
+        img: `<i class="fa-solid fa-hand-holding-medical"></i>`,
     },
     {
         id: 6,
-        bridge: "Avalanche bridge"
+        bridge: "Avalanche bridge",
+        img: `<i class="fa-solid fa-hand-holding-medical"></i>`,
     },
 ]
 
