@@ -35,8 +35,8 @@ const optimization = () => {
     return config
 }
 
-const filenameJs = (ext) => isDev ? `js/[name].${ext}` : `js/[name].${ext}`;
-const filenameCss = (ext) => isDev ? `css/[name].${ext}` : `css/[name].${ext}`; 
+const filenameJs = (ext) => isDev ? `js/[name].${ext}` : `js/[name].[contenthash].${ext}`;
+const filenameCss = (ext) => isDev ? `css/[name].${ext}` : `css/[name].[contenthash].${ext}`; 
 
 const cssLoaders = (extra) => {
     const loaders = [

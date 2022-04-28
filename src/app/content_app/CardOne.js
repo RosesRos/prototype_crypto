@@ -50,6 +50,17 @@ const styles = {
             cursor: "pointer"
         }
     },
+    card_body_first_input: {
+        background: "transparent",
+        border: "none",
+        color: colors.white,
+        textAlign: "end",
+        outline: "none",
+        minHeight: "2.4rem",
+        fontSize: "2.4rem",
+        padding: "0!important",
+        width: "70%",
+    },
     arrow: {
         transform: "rotateX(150deg)",
     }
@@ -68,7 +79,7 @@ const CardOne = () => {
                 <i class="fa-brands fa-ethereum"></i>
                 ETH
                 <i class="fa-solid fa-angle-down"></i> </button>
-            <input></input>
+            <input class=${classes.card_body_first_input} type="text" placeholder="0"></input>
         </div>
         <div class=${classes.card_body_first_content}>
             <span class=${classes.card_body_first_text}>Ethereum</span>
