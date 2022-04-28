@@ -11,4 +11,5 @@ export const colors = {
     bgCard: "#06070A",
     bgCard2: "#131823",
     white: "#FEFEFF",
+    bgEthe3: "#627EE9",
 }

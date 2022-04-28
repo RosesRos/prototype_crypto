@@ -1,5 +1,6 @@
 import jss from "jss";
 import { colors } from "./Theme";
+import CardOne from "./content_app/CardOne";
 
 const createGenerateId = () => {
     return (rule) => `${rule.key}`; 
@@ -62,33 +63,7 @@ const styles = {
             cursor: "pointer",
         }
     },
-    card_body_first: {
-        backgroundColor: colors.bgCard,
-        padding: "1.5rem",
-        // height: "20rem",
-        width: "100%",
-        borderRadius: "2rem",
-        marginTop: "2rem",
-        // display: "flex",
-        // justifyContent: "space-between",
-    },
-    card_body_first_content: {
-        display: "flex",
-        justifyContent: "space-between",
-        margin: ["2.5rem", 2],
-        "&:nth-child(3)": {
-            marginBottom: "auto",
-        }
-    },
-    card_body_first_text: {
-        fontSize: "1.4rem",
-        "&:hover": {
-            color: colors.white,
-        }
-    },
-    card_body_first_num: {
-        fontSize: "1.4rem",
-    }
+    
 }
 
 const {classes} = jss.createStyleSheet(styles).attach();
@@ -108,25 +83,11 @@ const Content = () => {
                         <button class=${classes.card_header_icons}><i class="fa-solid fa-bars-progress"></i></button>
                     </div>
                 </div>
-                <div class=${classes.card_body_first}>
-                    <div>
-                        <span class=${classes.card_body_first_text}>You sell</span>
-                    </div>
-                    <div class=${classes.card_body_first_content}>
-                        <button>
-                            <i class="fa-brands fa-ethereum"></i>
-                            ETH
-                            <i class="fa-solid fa-angle-down"></i> </button>
-                        <input></input>
-                    </div>
-                    <div class=${classes.card_body_first_content}>
-                        <span class=${classes.card_body_first_text}>Ethereum</span>
-                        <span class=${classes.card_body_first_num}>75895858</span>
-                    </div>
-                </div>
+                ${CardOne()}
             </div>
         </section>
     `
 }
+
 
 export default Content;
