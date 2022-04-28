@@ -49,6 +49,9 @@ const styles = {
             borderRadius: "1rem",
             cursor: "pointer"
         }
+    },
+    arrow: {
+        transform: "rotateX(150deg)",
     }
 }
 
@@ -79,15 +82,25 @@ $(function() {
     $(".fa-angle-down").css("color", `${colors.bgText}`);
     var ethe = $(".fa-ethereum");
     ethe.css({
-        "background-color": `${colors.bgEthe3}`,
-        "border-radius": "50%",
-        "padding": "0.5rem",
-        "padding-top": "0.4rem",
-        "font-size": "1.6rem",
-        "width": "2.4rem",
-        "height": "2.4rem",
-        "margin-right": "0.5rem",
+        backgroundColor: `${colors.bgEthe3}`,
+        borderRadius: "50%",
+        padding: "0.5rem",
+        paddingTop: "0.4rem",
+        fontSize: "1.6rem",
+        width: "2.4rem",
+        height: "2.4rem",
+        marginRight: "0.5rem",
     });
+
+    var btn = $(".card_body_first_btn");
+    btn.hover(
+        function() {
+            $(".fa-angle-down:eq(6)").toggleClass(`${classes.arrow}`);
+        },
+        function() {
+            $(".fa-angle-down:eq(6)").removeClass(`${classes.arrow}`);
+        }
+    );
 });
 
 export default CardOne;

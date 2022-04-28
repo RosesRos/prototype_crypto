@@ -77,6 +77,9 @@ const styles = {
             cursor: "pointer",
             borderRadius: "1rem",
         }
+    },
+    arrow: {
+        transform: "rotateX(150deg)",
     } 
 }
 
@@ -118,6 +121,7 @@ $(function() {
     btnFirst.on("click", function() {
         var items = $(".nav_list_sub_btn");
         items.toggle();
+        $(".fa-angle-down:eq(5)").toggleClass(`${classes.arrow}`);
     })
     btnSecond.css("color", `${colors.bgConnet}`)
 });

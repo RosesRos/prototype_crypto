@@ -61,6 +61,9 @@ const styles = {
             cursor: "pointer",
             borderRadius: "1rem",
         }
+    },
+    arrow: {
+        transform: "rotateX(150deg)",
     }
 }
 
@@ -130,26 +133,31 @@ $(function() {
     item1.on("click", function() {
         var list1 = $(".nav_list_sub:eq(0)");
         list1.toggle();
+        $(".fa-angle-down:eq(0)").toggleClass(`${classes.arrow}`);
     })
     
     item2.on("click", function() {
         var list2 = $(".nav_list_sub:eq(1)");
         list2.toggle();
+        $(".fa-angle-down:eq(1)").toggleClass(`${classes.arrow}`);
     })
 
     item3.on("click", function() {
         var list3 = $(".nav_list_sub:eq(2)");
         list3.toggle();
+        $(".fa-angle-down:eq(2)").toggleClass(`${classes.arrow}`);
     })
 
     item4.on("click", function() {
         var list4 = $(".nav_list_sub:eq(3)");
         list4.toggle();
+        $(".fa-angle-down:eq(3)").toggleClass(`${classes.arrow}`);
     })
 
     item5.on("click", function() {
         var list5 = $(".nav_list_sub:eq(4)");
         list5.toggle();
+        $(".fa-angle-down:eq(4)").toggleClass(`${classes.arrow}`);
     })
 })
 
