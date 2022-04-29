@@ -28,9 +28,10 @@ const styles = {
             // padding: "1rem",
             backgroundColor: colors.bgPrimary,
             top: "-1rem",
-            left: 0,
+            left: "0.1rem",
             color: colors.white,
             textAlign: "center",
+            borderRadius: [10, 10, 10, 0],
         }
     },
     sub_card_body_one_content: {
