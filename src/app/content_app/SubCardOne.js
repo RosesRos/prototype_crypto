@@ -15,8 +15,21 @@ const styles = {
         width: "100%",
         border: [1, "solid", `${colors.bgText}`],
         borderRadius: "2rem",
+        marginTop: "2.5rem",
+        position: "relative",
         "&:hover": {
             cursor: "pointer",
+        },
+        "&:after": {
+            content: "'primary'",
+            position: "absolute",
+            width: "7rem",
+            height: "2rem",
+            backgroundColor: colors.bgPrimary,
+            top: "-1rem",
+            left: 0,
+            color: colors.white,
+            textAlign: "center",
         }
     },
     sub_card_body_one_content: {
