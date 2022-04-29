@@ -14,12 +14,42 @@ const styles = {
         width: "100%",
         border: [1, "solid", `${colors.bgText}`],
         borderRadius: "2rem",
-        marginTop: "2.5rem",
+        marginTop: "0.8rem",
         position: "relative",
         "&:hover": {
             cursor: "pointer",
+        }
+    },
+    sub_card_body_two_content: {
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        margin: 2,
+        "&:nth-child(1)": {
+            "&:hover": { 
+                color: colors.white,
+                // cursor: "pointer",
+            }
         },
-    }
+        "&:nth-child(2)": {
+            fontSize: "1.4rem",
+            marginBottom: 0,
+        }
+    },
+    sub_card_body_btn: {
+        padding: ["0.5rem", "1rem"],
+        backgroundColor: colors.bgCard,
+        borderRadius: "2rem",
+        border: "none",
+        // color: colors.bgText,
+        fontSize: "1.4rem",
+        fontWeight: "600",
+        marginLeft: "-1rem",
+    },
+    sub_card_body_two_text: {
+        // fontSize: "1.2rem",
+        fontWeight: "500",
+    },
 }
 
 const { classes } = jss.createStyleSheet(styles).attach();
@@ -27,16 +57,22 @@ const { classes } = jss.createStyleSheet(styles).attach();
 const SubCardTwo = () => {
     return `
         <div class=${classes.sub_card_body_two}>
-            <div>
-                <button>Uniswap</button>
-                <span>9585959596</span>
+            <div class=${classes.sub_card_body_two_content}>
+                <span class=${classes.sub_card_body_btn}>Uniswap <i class="fa-solid fa-angle-down"></i></span>
+                <span class=${classes.sub_card_body_two_text}>9585959596</span>
             </div>
-            <div>
-                <span>Tx cost</span>
-                <span>8494948484</span>
+            <div class=${classes.sub_card_body_two_content}>
+                <span class=${classes.sub_card_body_two_text}>Tx cost</span>
+                <span class=${classes.sub_card_body_two_text}>8494948484</span>
             </div>
         </div>
     `
 }
+
+
+$(function() {
+    var span2 = $(".sub_card_body_two_text:eq(0)");
+    span2.css("font-size", "2.5rem");
+})
 
 export default SubCardTwo;
