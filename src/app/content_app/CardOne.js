@@ -59,7 +59,7 @@ const styles = {
         minHeight: "2.4rem",
         fontSize: "2.4rem",
         padding: "0!important",
-        width: "70%",
+        width: "65%",
     },
     arrow: {
         transform: "rotateX(150deg)",

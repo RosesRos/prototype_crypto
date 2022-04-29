@@ -1,5 +1,6 @@
 import jss from "jss";
 import { colors } from "../Theme";
+import SubCardOne from "./SubCardOne";
 
 const createGenerateId = () => {
     return (rule) => `${rule.key}`; 
@@ -58,6 +59,7 @@ const CardTwo = () => {
                     DAI
                     <i class="fa-solid fa-angle-down"></i></button>
             </div>
+            ${SubCardOne()}
         </div>
     `
 }

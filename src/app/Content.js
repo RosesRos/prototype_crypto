@@ -21,7 +21,7 @@ const styles = {
         left: "50%",
         transform: "translate(-50%, 10%)",
         backgroundColor: colors.bgCard2,
-        maxWidth: "45rem",
+        maxWidth: "40rem",
         width: "100%",
         // height: "30rem",
         borderRadius: "2rem",
