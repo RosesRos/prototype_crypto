@@ -25,6 +25,7 @@ const styles = {
             position: "absolute",
             width: "7rem",
             height: "2rem",
+            // padding: "1rem",
             backgroundColor: colors.bgPrimary,
             top: "-1rem",
             left: 0,
