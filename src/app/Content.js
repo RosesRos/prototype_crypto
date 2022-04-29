@@ -1,6 +1,7 @@
 import jss from "jss";
 import { colors } from "./Theme";
 import CardOne from "./content_app/CardOne";
+import CardTwo from "./content_app/CardTwo";
 
 const createGenerateId = () => {
     return (rule) => `${rule.key}`; 
@@ -22,7 +23,7 @@ const styles = {
         backgroundColor: colors.bgCard2,
         maxWidth: "45rem",
         width: "100%",
-        height: "30rem",
+        // height: "30rem",
         borderRadius: "2rem",
         padding: ["1rem", "1.5rem"],
         zIndex: 0,
@@ -85,6 +86,7 @@ const Content = () => {
                 </div>
                 ${CardOne()}
                 <span><i class="fa-solid fa-arrow-down"></i></span>
+                ${CardTwo()}
             </div>
         </section>
     `

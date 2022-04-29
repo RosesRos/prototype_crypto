@@ -15,7 +15,7 @@ const styles = {
         // height: "20rem",
         width: "100%",
         borderRadius: "2rem",
-        marginTop: "2rem",
+        marginTop: "1rem",
         // display: "flex",
         // justifyContent: "space-between",
     },
