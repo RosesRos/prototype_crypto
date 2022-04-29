@@ -91,7 +91,7 @@ const CardOne = () => {
 
 $(function() {
     $(".fa-angle-down").css("color", `${colors.bgText}`);
-    var ethe = $(".fa-ethereum");
+    var ethe = $(".fa-ethereum:eq(2)");
     ethe.css({
         backgroundColor: `${colors.bgEthe3}`,
         borderRadius: "50%",

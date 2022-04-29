@@ -71,12 +71,23 @@ const styles = {
         listStyle: "none",
         margin: [0, "auto"],
         padding: "1rem",
-        textAlign: "center",
         "&:hover": {
             backgroundColor: colors.bgCard,
+            color: colors.white,
             cursor: "pointer",
             borderRadius: "1rem",
         }
+    },
+    nav_items_sub_icon: {
+        // backgroundColor: `${colors.bgPrice}`,
+        borderRadius: "50%",
+        padding: "0.5rem",
+        // paddingTop: "0.4rem",
+        fontSize: "1rem",
+        width: "2.4rem",
+        height: "2.4rem",
+        marginRight: "1rem",
+        color: colors.white
     },
     arrow: {
         transform: "rotateX(150deg)",
@@ -96,7 +107,7 @@ const MenuBtn = () => {
                         <i class="fa-solid fa-angle-down"></i>
                     </button>
                     <ul class=${classes.nav_list_sub_btn}>
-                        ${Ethe.map((d) => `<li class=${classes.nav_item_sub_btn} key=${d.id}>${d.ethe}</li>`).join(" ")}
+                        ${Ethe.map((d) => `<li class=${classes.nav_item_sub_btn} key=${d.id}><span class=${classes.nav_items_sub_icon}>${d.img}</span>${d.ethe}</li>`).join(" ")}
                     </ul>
                 </div>
                 <div class=${classes.nav_btn_content}>
@@ -123,7 +134,22 @@ $(function() {
         items.toggle();
         $(".fa-angle-down:eq(5)").toggleClass(`${classes.arrow}`);
     })
-    btnSecond.css("color", `${colors.bgConnet}`)
+    btnSecond.css("color", `${colors.bgConnet}`);
+
+    var ethe1 = $(".nav_items_sub_icon:eq(0)");
+    var ethe2 = $(".nav_items_sub_icon:eq(1)");
+    var ethe3 = $(".nav_items_sub_icon:eq(2)");
+    var ethe4 = $(".nav_items_sub_icon:eq(3)");
+    var ethe5 = $(".nav_items_sub_icon:eq(4)");
+    var ethe6 = $(".nav_items_sub_icon:eq(5)");
+
+    ethe1.css("background-color", `${colors.bgEthe3}`);
+    ethe2.css("background-color", `${colors.bgPrice}`);
+    ethe3.css("background-color", `${colors.bgPercent2}`);
+    ethe4.css("background-color", `#C61313`);
+    ethe5.css("background-color", `${colors.bgEthe}`);
+    ethe6.css("background-color", `${colors.bgPrimary}`);
+
 });
 
 export default MenuBtn;

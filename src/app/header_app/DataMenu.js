@@ -133,26 +133,32 @@ export const Bridges = [
 export const Ethe = [
     {
         id: 1,
-        ethe: "Ethereum"
+        ethe: "Ethereum",
+        img: `<i class="fa-brands fa-ethereum" style="padding-right: 0;"></i>`,
     },
     {
         id: 2,
-        ethe: "BNB Chain"
+        ethe: "BNB Chain",
+        img: `<i class="fa-solid fa-link"></i>`,
     },
     {
         id: 3,
-        ethe: "Polygon"
+        ethe: "Polygon",
+        img: `<i class="fa-brands fa-steam-square"></i>`,
     },
     {
         id: 4,
-        ethe: "Optimism"
+        ethe: "Optimism",
+        img: `<i class="fa-solid fa-dice-d6"></i>`,
     },
     {
         id: 5,
-        ethe: "Arbitrum"
+        ethe: "Arbitrum",
+        img: `<i class="fa-solid fa-dice"></i>`,
     },
     {
         id: 6,
-        ethe: "Gnosis"
+        ethe: "Gnosis",
+        img: `<i class="fa-solid fa-dice-d20"></i>`,
     },
 ]
