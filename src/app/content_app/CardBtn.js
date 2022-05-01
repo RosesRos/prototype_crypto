@@ -44,7 +44,11 @@ const cardBtn = () => {
 
 $(function() {
     var cardBtn = $(".cardBtn_item");
-    cardBtn.css("color", `${colors.bgConnet}`)
-})
+    cardBtn.css("color", `${colors.bgConnet}`);
+    
+    cardBtn.on("click", function() {
+        $(".modal_one").css("display", "block");
+    });
+});
 
 export default cardBtn;

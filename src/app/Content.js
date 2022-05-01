@@ -133,5 +133,12 @@ const Content = () => {
     `
 }
 
+$(function() {
+    var extra = $(".extra_btn");
+    extra.on("click", function() {
+        $(".modal_one").css("display", "block");
+    });
+});
+
 
 export default Content;
