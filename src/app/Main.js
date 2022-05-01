@@ -1,6 +1,7 @@
 import jss from "jss";
 import Header from "./Header";
 import Content from "./Content";
+import ModalTwo from "./modals/ModalTwo";
 
 
 const root = document.getElementById("root");
@@ -21,6 +22,7 @@ const Main = () => {
    root.innerHTML = `
         ${Header()}
         ${Content()}
+        ${ModalTwo()}
    `
 };
 

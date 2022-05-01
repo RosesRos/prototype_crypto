@@ -19,7 +19,7 @@ const styles = {
         },
         body: {
             fontSize: "16px",
-        }
+        },
     }
 }
 
