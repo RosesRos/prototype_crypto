@@ -10,9 +10,22 @@ jss.setup({createGenerateId});
 const styles = {
     cardBtn: {
         width: "100%",
+        borderRadius: "1rem",
+        backgroundColor: colors.bgButton,
+        marginTop: "1.5rem",
+        "&:hover": {
+            backgroundColor: `${colors.bgEthe2}`,
+        }
+    },
+    cardBtn_item: {
+        padding: "1rem",
+        margin: [0 , "auto"],
+        outline: "none", 
+        backgroundColor: "transparent",
         border: "none",
-        borderRadius: "2rem",
-        backgroundColor: colors.bgButton
+        color: colors.bgText,
+        width: "100%",
+        cursor: "pointer",
     }
 }
 
@@ -20,8 +33,18 @@ const { classes } = jss.createStyleSheet(styles).attach();
 
 const cardBtn = () => {
     return `
-        <button class=${classes.cardBtn}>click</button>
+        <div class=${classes.cardBtn}>
+            <button class=${classes.cardBtn_item}>
+                <i class="fa-solid fa-wallet"></i>
+                Connet Wallet
+            </button>
+        </div>
     `
 }
+
+$(function() {
+    var cardBtn = $(".cardBtn_item");
+    cardBtn.css("color", `${colors.bgConnet}`)
+})
 
 export default cardBtn;

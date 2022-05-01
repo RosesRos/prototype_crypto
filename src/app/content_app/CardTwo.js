@@ -20,7 +20,7 @@ const styles = {
         borderRadius: "2rem",
         // height: "30rem",
         overflow: "hidden",
-        height: "28.5rem",
+        height: "28.7rem",
         transition: ["2s", "ease-linear"],
     },
     card_body_second_content: {
