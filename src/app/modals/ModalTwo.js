@@ -44,11 +44,55 @@ const styles = {
     modal_one_card: {
         // justifyContent: "center",
         // alignItems: "center",
-        maxWidth: "50rem",
+        maxWidth: "72rem",
         width: "100%",
-        height: "30rem",
+        // height: "30rem",
         backgroundColor: colors.bgCard2,
         borderRadius: "2rem",
+        padding: ["2rem", "3rem"],
+
+    },
+    modal_one_card_item: {
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        position: "relative",
+        margin: ["1rem", 0],
+        "&>h2": {
+            margin: ["1rem", 0],
+            color: colors.white,
+            fontWeight: 300,
+        }
+    },
+    modal_one_btn_close: {
+        backgroundColor: "transparent",
+        border: "none",
+        color: colors.bgText,
+        position: "absolute",
+        fontWeight: 700,
+        fontSize: "2rem",
+        top: 0,
+        right: 0,
+        "&:hover": {
+            cursor: "pointer",
+            color: colors.white,
+        }
+    },
+    modal_one_card_content: {
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        width: "100%",
+        padding: [0, "2rem"],
+
+    },
+    modal_one_card_block: {
+        display: "flex",
+        flexDirection: "column",
+        width: "80%",
+        padding: "1rem",
+        border: [1, "solid", "rgba(92, 114, 149, 0.2)"],
+        borderRadius: "1.5rem",
     }
 }
 
@@ -59,7 +103,31 @@ const ModalTwo = () => {
         <section class=${classes.section}>
             <div class=${classes.modal_one}>
                 <div class=${classes.modal_one_container}>
-                    <div class=${classes.modal_one_card}></div>
+                    <div class=${classes.modal_one_card}>
+                        <div class=${classes.modal_one_card_item}>
+                            <h2>Routing</h2>
+                            <button class=${classes.modal_one_btn_close}>X</button>
+                        </div>
+                        <div class=${classes.modal_one_card_item}>
+                            <button>
+                                <i class="fa-brands fa-ethereum"></i>
+                            </button>
+                            <div class=${classes.modal_one_card_content}>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <div class=${classes.modal_one_card_block}>
+                                    <button>
+                                        <i class="fa-solid fa-euro-sign"></i>
+                                        DAI
+                                    </button>
+                                    <span>Uniswap V2 100%</span>
+                                </div>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                            <button>
+                                <i class="fa-solid fa-euro-sign"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
