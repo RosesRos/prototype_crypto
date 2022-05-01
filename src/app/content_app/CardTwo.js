@@ -20,6 +20,8 @@ const styles = {
         borderRadius: "2rem",
         // height: "30rem",
         overflow: "hidden",
+        height: "28.5rem",
+        transition: ["2s", "ease-linear"],
     },
     card_body_second_content: {
         margin: ["1.5rem", 2],
@@ -46,6 +48,9 @@ const styles = {
     },
     arrow: {
         transform: "rotateX(150deg)",
+    },
+    active1: {
+        height: "100%",
     }
 }
 

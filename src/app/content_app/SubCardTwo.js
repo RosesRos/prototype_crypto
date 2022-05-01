@@ -82,9 +82,9 @@ $(function() {
 
     var uniswap = $(".sub_card_body_btn");
     uniswap.on("click", function() {
-        $(".sub_card_body_three").toggle()
+        $(".card_body_second").toggleClass("active1");
     })
 
-})
+});
 
 export default SubCardTwo;

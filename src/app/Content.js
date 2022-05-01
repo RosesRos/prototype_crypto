@@ -2,6 +2,7 @@ import jss from "jss";
 import { colors } from "./Theme";
 import CardOne from "./content_app/CardOne";
 import CardTwo from "./content_app/CardTwo";
+import cardBtn from "./content_app/CardBtn";
 
 const createGenerateId = () => {
     return (rule) => `${rule.key}`; 
@@ -87,6 +88,7 @@ const Content = () => {
                 ${CardOne()}
                 <span><i class="fa-solid fa-arrow-down"></i></span>
                 ${CardTwo()}
+                ${cardBtn()}
             </div>
         </section>
     `

@@ -9,16 +9,17 @@ jss.setup({createGenerateId});
 
 const styles = {
     sub_card_body_three: {
-        display: "none",
+        // display: "none",
         backgroundColor: "transparent",
         padding: "1.5rem",
         width: "100%",
+        // height: 0,
         // border: [1, "solid", `${colors.bgText}`],
         border: [0.2, "solid", "rgba(92, 114, 149, 0.5)"],
         borderRadius: "2rem",
         marginTop: "0.8rem",
         position: "relative",
-        transition: ["0.6s", "ease-linear"],
+        transition: ["2s", "ease-in-out"],
         "&:hover": {
             cursor: "pointer",
             backgroundColor: "rgba(6, 7, 10, 0.5)"
