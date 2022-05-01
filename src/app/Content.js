@@ -92,8 +92,29 @@ const styles = {
             color: colors.white,
             cursor: "pointer",
         }
+    },
+    card_arrow: {
+        display: "flex",
+        justifyContent: "center",
+        position: "relative",
+    },
+    card_arrow_item: {
+        backgroundColor: colors.bgButton,
+        color: colors.white,
+        position: "absolute",
+        top: "-1rem",
+        // padding: "0.5rem",
+        borderRadius: "100%",
+        width: "3rem",
+        height: "3rem",
+        paddingLeft: "0.9rem",
+        paddingTop: "0.6rem",
+        transition: ["0.2s", "ease"],
+        "&:hover": {
+            transform: "rotate(180deg)",
+            cursor: "pointer",
+        }
     }
-    
 }
 
 const {classes} = jss.createStyleSheet(styles).attach();
@@ -115,7 +136,9 @@ const Content = () => {
                         </div>
                     </div>
                     ${CardOne()}
-                    <span><i class="fa-solid fa-arrow-down"></i></span>
+                    <div class=${classes.card_arrow}>
+                        <span class=${classes.card_arrow_item}><i class="fa-solid fa-arrow-down"></i></span>
+                    </div>
                     ${CardTwo()}
                     ${cardBtn()}
                 </div>

@@ -44,6 +44,7 @@ const styles = {
         border: "none",
         color: colors.white,
         fontWeight: "500",
+        transition: ["0.2s", "ease"],
         "&:hover": {
             backgroundColor: colors.bgButton,
             borderRadius: "1rem",
@@ -62,7 +63,7 @@ const styles = {
         width: "65%",
     },
     arrow: {
-        transform: "rotateX(150deg)",
+        transform: "rotate(180deg)",
     }
 }
 

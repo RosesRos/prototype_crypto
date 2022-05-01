@@ -18,6 +18,7 @@ const styles = {
         width: "100%",
         padding: "1.5rem",
         borderRadius: "2rem",
+        marginTop: "1rem",
         // height: "30rem",
         // overflow: "hidden",
         // height: "28.7rem",
