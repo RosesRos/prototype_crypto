@@ -82,7 +82,7 @@ $(function() {
 
     var uniswap = $(".sub_card_body_btn");
     uniswap.on("click", function() {
-        $(".card_body_second").toggleClass("active1");
+        $(".card_body_three_content").toggleClass("active1");
     })
 
 });

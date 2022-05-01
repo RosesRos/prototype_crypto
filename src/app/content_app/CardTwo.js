@@ -19,12 +19,20 @@ const styles = {
         padding: "1.5rem",
         borderRadius: "2rem",
         // height: "30rem",
-        overflow: "hidden",
-        height: "28.7rem",
-        transition: ["2s", "ease-linear"],
+        // overflow: "hidden",
+        // height: "28.7rem",
+        // transition: ["0.2s", "ease"],
+        // transitionProperty: "height",
+        // transitionDelay: 0,
     },
     card_body_second_content: {
         margin: ["1.5rem", 2],
+    },
+    card_body_three_content: {
+        height: "19.5rem",
+        transition: ["0.2s", "ease"],
+        transitionProperty: "height",
+        overflow: "hidden",
     },
     card_body_second_text: {
         fontSize: "1.4rem",
@@ -68,9 +76,11 @@ const CardTwo = () => {
                     DAI
                     <i class="fa-solid fa-angle-down"></i></button>
             </div>
-            ${SubCardOne()}
-            ${SubCardTwo()}
-            ${SubCardThree()}
+            <div class=${classes.card_body_three_content}>
+                ${SubCardOne()}
+                ${SubCardTwo()}
+                ${SubCardThree()}
+            </div>
         </div>
     `
 }
