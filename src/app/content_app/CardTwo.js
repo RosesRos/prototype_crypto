@@ -2,6 +2,7 @@ import jss from "jss";
 import { colors } from "../Theme";
 import SubCardOne from "./SubCardOne";
 import SubCardTwo from "./SubCardTwo";
+import SubCardThree from "./SubCardThree";
 
 const createGenerateId = () => {
     return (rule) => `${rule.key}`; 
@@ -11,12 +12,14 @@ jss.setup({createGenerateId});
 
 const styles = {
     card_body_second: {
-        border: [0.2, "solid", `${colors.bgText}`],
+        // border: [0.2, "solid", `${colors.bgText}`],
+        border: [0.2, "solid", "rgba(92, 114, 149, 0.2)"],
         backgroundColor: "transparent",
         width: "100%",
         padding: "1.5rem",
         borderRadius: "2rem",
         // height: "30rem",
+        overflow: "hidden",
     },
     card_body_second_content: {
         margin: ["1.5rem", 2],
@@ -62,12 +65,15 @@ const CardTwo = () => {
             </div>
             ${SubCardOne()}
             ${SubCardTwo()}
+            ${SubCardThree()}
         </div>
     `
 }
 
 
 $(function() {
+    $(".fa-angle-down:eq(7)").css("color", `${colors.bgText}`);
+
     var euro = $(".fa-euro-sign");
     euro.css({
         backgroundColor: `${colors.bgPrice}`,

@@ -12,12 +12,14 @@ const styles = {
         backgroundColor: "transparent",
         padding: "1.5rem",
         width: "100%",
-        border: [1, "solid", `${colors.bgText}`],
+        // border: [1, "solid", `${colors.bgText}`],
+        border: [0.2, "solid", "rgba(92, 114, 149, 0.5)"],
         borderRadius: "2rem",
         marginTop: "0.8rem",
         position: "relative",
         "&:hover": {
             cursor: "pointer",
+            backgroundColor: "rgba(6, 7, 10, 0.5)"
         }
     },
     sub_card_body_two_content: {
@@ -45,6 +47,10 @@ const styles = {
         fontSize: "1.4rem",
         fontWeight: "600",
         marginLeft: "-1rem",
+        "&:hover": {
+            backgroundColor: colors.bgCard,
+            color: colors.white,
+        }
     },
     sub_card_body_two_text: {
         // fontSize: "1.2rem",
@@ -73,6 +79,12 @@ const SubCardTwo = () => {
 $(function() {
     var span2 = $(".sub_card_body_two_text:eq(0)");
     span2.css("font-size", "2.5rem");
+
+    var uniswap = $(".sub_card_body_btn");
+    uniswap.on("click", function() {
+        $(".sub_card_body_three").toggle()
+    })
+
 })
 
 export default SubCardTwo;
