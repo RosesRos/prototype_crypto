@@ -97,7 +97,6 @@ const styles = {
         display: "flex",
         justifyContent: "center",
         position: "relative",
-        transform: "translateX(100px)"
     },
     card_arrow_item: {
         backgroundColor: colors.bgButton,

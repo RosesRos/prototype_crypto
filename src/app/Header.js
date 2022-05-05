@@ -1,5 +1,4 @@
 import jss from "jss";
-import jssPluginVendorPrefixer from 'jss-plugin-vendor-prefixer'
 import Logo from "./header_app/Logo";
 import Menu from "./header_app/Menu";
 import MenuBtn from "./header_app/MenuBtn";
@@ -23,7 +22,6 @@ const styles = {
     }
 }
 
-jss.use(jssPluginVendorPrefixer)
 const {classes} = jss.createStyleSheet(styles).attach();
 
 
