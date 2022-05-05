@@ -6,6 +6,7 @@ import ModalTwo from "./modals/ModalTwo";
 
 const root = document.getElementById("root");
 
+
 const styles = {
     paddingLeft: "2.5rem",
     paddingRight: "2.5rem",
@@ -19,11 +20,11 @@ jss.createRule(styles).applyTo(root);
 
 
 const Main = () => {
-   root.innerHTML = `
+    root.innerHTML = `
         ${Header()}
         ${Content()}
         ${ModalTwo()}
-   `
+    `
 };
 
 export default Main;
