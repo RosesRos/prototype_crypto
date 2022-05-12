@@ -145,93 +145,13 @@ $(function() {
         $(this).mouseenter(function() {
             $(value).children(".nav_list_sub").css("display", "block");
             $(value).find(".fa-angle-down").toggleClass(`${classes.arrow}`);
-            // $(".fa-angle-down").toggleClass(`${classes.arrow}`);
         });
+        
         $(this).mouseleave(function() {
             $(value).children(".nav_list_sub").css("display", "none");
             $(value).find(".fa-angle-down").removeClass(`${classes.arrow}`);
         });
     });
-
-    // $(".nav_item").each(function(index, value) {
-    //     $(this).mouseenter(function() {
-    //         $(value).children(".fa-angle-down").toggleClass(`${classes.arrow}`);
-    //     });
-    //     $(this).mouseleave(function() {
-    //         $(value).children(".fa-angle-down").removeClass(`${classes.arrow}`);
-    //     });
-    // });
-
-    // var item1 = $(".nav_content:eq(0)");
-    // var item2 = $(".nav_content:eq(1)");
-    // var item3 = $(".nav_content:eq(2)");
-    // var item4 = $(".nav_content:eq(3)");
-    // var item5 = $(".nav_content:eq(4)");
-
-    // item1.mouseenter(
-    //     function() {
-    //     var list1 = $(".nav_list_sub:eq(0)");
-    //     list1.css("display", "block");
-    //     $(".fa-angle-down:eq(0)").toggleClass(`${classes.arrow}`);
-    // });
-
-    // item1.mouseleave(function() {
-    //     var list1 = $(".nav_list_sub:eq(0)");
-    //     list1.css("display", "none");
-    //     $(".fa-angle-down:eq(0)").removeClass(`${classes.arrow}`);
-    // });
-    
-    // item2.mouseenter(
-    //     function() {
-    //     var list1 = $(".nav_list_sub:eq(1)");
-    //     list1.css("display", "block");
-    //     $(".fa-angle-down:eq(1)").toggleClass(`${classes.arrow}`);
-    // });
-
-    // item2.mouseleave(function() {
-    //     var list1 = $(".nav_list_sub:eq(1)");
-    //     list1.css("display", "none");
-    //     $(".fa-angle-down:eq(1)").removeClass(`${classes.arrow}`);
-    // });
-
-    // item3.mouseenter(
-    //     function() {
-    //     var list1 = $(".nav_list_sub:eq(2)");
-    //     list1.css("display", "block");
-    //     $(".fa-angle-down:eq(2)").toggleClass(`${classes.arrow}`);
-    // });
-
-    // item3.mouseleave(function() {
-    //     var list1 = $(".nav_list_sub:eq(2)");
-    //     list1.css("display", "none");
-    //     $(".fa-angle-down:eq(2)").removeClass(`${classes.arrow}`);
-    // });
-
-    // item4.mouseenter(
-    //     function() {
-    //     var list1 = $(".nav_list_sub:eq(3)");
-    //     list1.css("display", "block");
-    //     $(".fa-angle-down:eq(3)").toggleClass(`${classes.arrow}`);
-    // });
-
-    // item4.mouseleave(function() {
-    //     var list1 = $(".nav_list_sub:eq(3)");
-    //     list1.css("display", "none");
-    //     $(".fa-angle-down:eq(3)").removeClass(`${classes.arrow}`);
-    // });
-
-    // item5.mouseenter(
-    //     function() {
-    //     var list1 = $(".nav_list_sub:eq(4)");
-    //     list1.css("display", "block");
-    //     $(".fa-angle-down:eq(4)").toggleClass(`${classes.arrow}`);
-    // });
-
-    // item5.mouseleave(function() {
-    //     var list1 = $(".nav_list_sub:eq(4)");
-    //     list1.css("display", "none");
-    //     $(".fa-angle-down:eq(4)").removeClass(`${classes.arrow}`);
-    // });
     
     var icon1 = $(".nav_item_sub_icons:eq(0)");
     var icon2 = $(".nav_item_sub_icons:eq(1)");
