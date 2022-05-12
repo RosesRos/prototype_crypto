@@ -12,12 +12,9 @@ const styles = {
     card_body_first: {
         backgroundColor: colors.bgCard,
         padding: "1.5rem",
-        // height: "20rem",
         width: "100%",
         borderRadius: "2rem",
         marginTop: "1rem",
-        // display: "flex",
-        // justifyContent: "space-between",
     },
     card_body_first_content: {
         display: "flex",

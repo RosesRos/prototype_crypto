@@ -12,7 +12,6 @@ const styles = {
         backgroundColor: "transparent",
         padding: "1.5rem",
         width: "100%",
-        // border: [1, "solid", `${colors.bgText}`],
         border: [0.2, "solid", "rgba(92, 114, 149, 0.5)"],
         borderRadius: "2rem",
         marginTop: "0.8rem",
@@ -30,7 +29,6 @@ const styles = {
         "&:nth-child(1)": {
             "&:hover": { 
                 color: colors.white,
-                // cursor: "pointer",
             }
         },
         "&:nth-child(2)": {
@@ -43,7 +41,6 @@ const styles = {
         backgroundColor: colors.bgCard,
         borderRadius: "2rem",
         border: "none",
-        // color: colors.bgText,
         fontSize: "1.4rem",
         fontWeight: "600",
         marginLeft: "-1rem",
@@ -53,7 +50,6 @@ const styles = {
         }
     },
     sub_card_body_two_text: {
-        // fontSize: "1.2rem",
         fontWeight: "500",
     },
 }

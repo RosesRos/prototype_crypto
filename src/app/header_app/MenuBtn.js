@@ -25,7 +25,6 @@ const styles = {
             marginRight: "1rem",
         },
         "&:nth-child(2)": {
-            // border: ["1px", "solid", "white"],
             borderRadius: "1rem",
             backgroundColor: colors.bgCard2,
             "&:hover": {
@@ -47,7 +46,6 @@ const styles = {
         padding: "1rem",
         margin: [0 , "auto"],
         outline: "none", 
-        // backgroundColor: "transparent",
         border: "none",
         color: colors.bgText,
         width: "100%",
@@ -79,10 +77,8 @@ const styles = {
         }
     },
     nav_items_sub_icon: {
-        // backgroundColor: `${colors.bgPrice}`,
         borderRadius: "50%",
         padding: "0.5rem",
-        // paddingTop: "0.4rem",
         fontSize: "1rem",
         width: "2.4rem",
         height: "2.4rem",

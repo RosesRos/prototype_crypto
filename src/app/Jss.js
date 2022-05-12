@@ -5,7 +5,7 @@ import jssPluginVendorPrefixer from 'jss-plugin-vendor-prefixer';
 
 const Jss = () => {
     jss.setup(preset());
-    jss.use(jssPluginVendorPrefixer);
+    jss.use(jssPluginVendorPrefixer());
 } 
 
 export default Jss;

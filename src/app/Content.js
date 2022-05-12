@@ -13,8 +13,6 @@ jss.setup({createGenerateId});
 const styles = {
     section: {
         overflow: "hidden",
-        // display: "flex",
-        // justifyContent: "center",
     },
     section_inner: {
         position: "absolute",
@@ -23,18 +21,12 @@ const styles = {
         transform: "translate(-50%, 10%)",
     },
     card: {
-        // position: "absolute",
-        // top: "20%",
-        // left: "50%",
-        // transform: "translate(-50%, 10%)",
         backgroundColor: colors.bgCard2,
         maxWidth: "40rem",
         width: "100%",
-        // height: "30rem",
         borderRadius: "2rem",
         padding: ["1rem", "1.5rem"],
         zIndex: 0,
-        // marginTop: "10%",
     },
     card_header: {
         display: "flex",
@@ -103,7 +95,6 @@ const styles = {
         color: colors.white,
         position: "absolute",
         top: "-1rem",
-        // padding: "0.5rem",
         borderRadius: "100%",
         width: "3rem",
         height: "3rem",

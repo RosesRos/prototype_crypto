@@ -68,10 +68,8 @@ const styles = {
         
     },
     nav_item_sub_icons: {
-        // backgroundColor: `${colors.bgPrice}`,
         borderRadius: "50%",
         padding: "0.5rem",
-        // paddingTop: "0.4rem",
         fontSize: "1rem",
         width: "2.4rem",
         height: "2.4rem",

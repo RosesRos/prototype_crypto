@@ -12,19 +12,12 @@ jss.setup({createGenerateId});
 
 const styles = {
     card_body_second: {
-        // border: [0.2, "solid", `${colors.bgText}`],
         border: [0.2, "solid", "rgba(92, 114, 149, 0.2)"],
         backgroundColor: "transparent",
         width: "100%",
         padding: "1.5rem",
         borderRadius: "2rem",
         marginTop: "1rem",
-        // height: "30rem",
-        // overflow: "hidden",
-        // height: "28.7rem",
-        // transition: ["0.2s", "ease"],
-        // transitionProperty: "height",
-        // transitionDelay: 0,
     },
     card_body_second_content: {
         margin: ["1.5rem", 2],

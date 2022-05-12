@@ -9,12 +9,9 @@ jss.setup({createGenerateId});
 
 const styles = {
     sub_card_body_three: {
-        // display: "none",
         backgroundColor: "transparent",
         padding: "1.5rem",
         width: "100%",
-        // height: 0,
-        // border: [1, "solid", `${colors.bgText}`],
         border: [0.2, "solid", "rgba(92, 114, 149, 0.5)"],
         borderRadius: "2rem",
         marginTop: "0.8rem",
@@ -33,7 +30,6 @@ const styles = {
         "&:nth-child(1)": {
             "&:hover": { 
                 color: colors.white,
-                // cursor: "pointer",
             }
         },
         "&:nth-child(2)": {
@@ -42,7 +38,6 @@ const styles = {
         }
     },
     sub_card_body_three_text: {
-        // fontSize: "1.2rem",
         fontWeight: "500",
     },
 }

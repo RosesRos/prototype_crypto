@@ -25,7 +25,6 @@ const styles = {
             position: "absolute",
             width: "7rem",
             height: "2rem",
-            // padding: "1rem",
             backgroundColor: colors.bgPrimary,
             top: "-1rem",
             left: "0.1rem",
@@ -47,7 +46,6 @@ const styles = {
         }
     },
     sub_card_body_one_text: {
-        // fontSize: "1.2rem",
         fontWeight: "500",
     },
     active: {
