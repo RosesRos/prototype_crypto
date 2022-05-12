@@ -142,12 +142,12 @@ const Menu = () => {
 $(function() {
 
     $(".nav_content").each(function(index, value) {
-        $(this).mouseenter(function() {
+        $(this).on("mouseenter", function() {
             $(value).children(".nav_list_sub").css("display", "block");
             $(value).find(".fa-angle-down").toggleClass(`${classes.arrow}`);
         });
-        
-        $(this).mouseleave(function() {
+
+        $(this).on("mouseleave", function() {
             $(value).children(".nav_list_sub").css("display", "none");
             $(value).find(".fa-angle-down").removeClass(`${classes.arrow}`);
         });
