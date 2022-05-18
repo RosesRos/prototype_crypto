@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "project with webpack",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "build": "cross-env NODE_ENV=production webpack --mode production",
