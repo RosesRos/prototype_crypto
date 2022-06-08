@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
 const CssMinimizerWebpackPlugin = require("css-minimizer-webpack-plugin");
-const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
+// const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 const { webpack } = require("webpack");
 
 const isDev = process.env.NODE_ENV === "development";
@@ -84,9 +84,9 @@ const plugins = () => {
         }),
     ]
 
-    if (isProd) {
-        base.push(new BundleAnalyzerPlugin())
-    }
+    // if (isProd) {
+    //     base.push(new BundleAnalyzerPlugin())
+    // }
 
     if (isDev) {
         base.push(new webpack.HotModuleReplacementPlugin)
