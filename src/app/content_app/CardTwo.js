@@ -3,6 +3,7 @@ import { colors } from "../Theme";
 import SubCardOne from "./SubCardOne";
 import SubCardTwo from "./SubCardTwo";
 import SubCardThree from "./SubCardThree";
+import { query } from "../MediaQuery";
 
 const createGenerateId = () => {
     return (rule) => `${rule.key}`; 
@@ -23,7 +24,7 @@ const styles = {
         margin: ["1.5rem", 2],
     },
     card_body_three_content: {
-        height: "19.5rem",
+        height: "19rem",
         transition: ["0.2s", "ease"],
         transitionProperty: "height",
         overflow: "hidden",
@@ -53,7 +54,23 @@ const styles = {
     },
     active1: {
         height: "100%",
-    }
+    },
+    [`@media (max-width: ${query.mobile}px)`]: {
+        // card_body_three_content: {
+        //     height: "20.5rem",
+        // },
+        active1: {
+            height: "100%",
+        },
+    },
+    [`@media (max-width: ${query.mobileSm}px)`]: {
+        // card_body_three_content: {
+        //     height: "20.5rem",
+        // },
+        active1: {
+            height: "100%",
+        },
+    },
 }
 
 const {classes} = jss.createStyleSheet(styles).attach();

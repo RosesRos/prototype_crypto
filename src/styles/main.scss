@@ -44,3 +44,23 @@ body {
         color: var(--colorSetting);
     }
 }
+
+.burger {
+    &.burger_active {
+        .burger_item {
+            &:nth-child(1) {
+                transform-origin: left top;
+                transform: rotate(45deg) translateY(8px);
+                width: 75%;
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                transform-origin: bottom left;
+                transform: rotate(-45deg) translateY(2px);
+                width: 75%;
+            }
+        }
+    }
+}

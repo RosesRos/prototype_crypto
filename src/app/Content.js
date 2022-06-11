@@ -113,6 +113,11 @@ const styles = {
             top: "10%"
         }
     },
+    [`@media (max-width: ${query.mobileSm}px)`]: {
+        card: {
+            maxWidth: "30rem",
+        }
+    }
 }
 
 const {classes} = jss.createStyleSheet(styles).attach();

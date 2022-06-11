@@ -1,5 +1,6 @@
 import jss from "jss";
 import { colors } from "../Theme";
+import { query } from "../MediaQuery";
 
 const createGenerateId = () => {
     return (rule) => `${rule.key}`;
@@ -52,6 +53,16 @@ const styles = {
     sub_card_body_two_text: {
         fontWeight: "500",
     },
+    [`@media (max-width: ${query.mobile}px)`]: {
+        sub_card_body_two: {
+            width: "30rem"
+        }
+    },
+    [`@media (max-width: ${query.mobileSm}px)`]: {
+        sub_card_body_two: {
+            width: "23rem"
+        }
+    }
 }
 
 const { classes } = jss.createStyleSheet(styles).attach();
@@ -61,11 +72,11 @@ const SubCardTwo = () => {
         <div class=${classes.sub_card_body_two}>
             <div class=${classes.sub_card_body_two_content}>
                 <span class=${classes.sub_card_body_btn}>Uniswap <i class="fa-solid fa-angle-down"></i></span>
-                <span class=${classes.sub_card_body_two_text}>9585959596</span>
+                <span class=${classes.sub_card_body_two_text}>958546</span>
             </div>
             <div class=${classes.sub_card_body_two_content}>
                 <span class=${classes.sub_card_body_two_text}>Tx cost</span>
-                <span class=${classes.sub_card_body_two_text}>8494948484</span>
+                <span class=${classes.sub_card_body_two_text}>84944</span>
             </div>
         </div>
     `
@@ -74,7 +85,7 @@ const SubCardTwo = () => {
 
 $(function() {
     var span2 = $(".sub_card_body_two_text:eq(0)");
-    span2.css("font-size", "2.5rem");
+    span2.css("font-size", "2rem");
 
     var uniswap = $(".sub_card_body_btn");
     uniswap.on("click", function() {

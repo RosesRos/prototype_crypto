@@ -1,5 +1,6 @@
 import jss from "jss";
 import { colors } from "../Theme";
+import { query } from "../MediaQuery";
 import * as $ from "jquery";
 
 const createGenerateId = () => {
@@ -61,7 +62,12 @@ const styles = {
     },
     arrow: {
         transform: "rotate(180deg)",
-    }
+    },
+    [`@media (max-width: ${query.mobile}px)`]: {
+        card_body_first_input: {
+            width: "55%",
+        }
+    },
 }
 
 const {classes} = jss.createStyleSheet(styles).attach();

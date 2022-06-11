@@ -26,16 +26,26 @@ const styles = {
         padding: 0,
         "&:hover": {
             cursor: "pointer"
-        }
+        },
     },
     burger_item: {
         display: "block",
         width: "100%",
         height: "0.4rem",
         marginBottom: "0.8rem",
-        backgroundColor: colors.white,
+        backgroundColor: colors.bgText,
         borderRadius: "2rem",
-        transition: ["all", "0.2s", "linear"]
+        transition: ["all", "1s", "linear"],
+        "&:nth-child(1)": {
+            width: "30%",
+            marginLeft: "1rem",
+        },
+        "&:nth-child(2)": {
+            width: "50%",
+        },
+        "&:nth-child(3)": {
+            width: "30%",
+        }
     },
     [`@media (max-width: ${query.desktop}px)`]: {
         burger: {
@@ -61,6 +71,7 @@ $(function() {
     var nav = $(".nav");
     $(".burger").on("click", function() {
         nav.toggle(1000);
+        $(this).toggleClass("burger_active")
     });
 });
 

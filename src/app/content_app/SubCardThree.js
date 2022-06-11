@@ -1,5 +1,6 @@
 import jss from "jss";
 import { colors } from "../Theme";
+import { query } from "../MediaQuery";
 
 const createGenerateId = () => {
     return (rule) => `${rule.key}`; 
@@ -40,6 +41,16 @@ const styles = {
     sub_card_body_three_text: {
         fontWeight: "500",
     },
+    [`@media (max-width: ${query.mobile}px)`]: {
+        sub_card_body_three: {
+            width: "30rem"
+        }
+    },
+    [`@media (max-width: ${query.mobileSm}px)`]: {
+        sub_card_body_three: {
+            width: "23rem"
+        }
+    }
 }
 
 const { classes } = jss.createStyleSheet(styles).attach();
@@ -49,11 +60,11 @@ const SubCardThree = () => {
         <div class=${classes.sub_card_body_three}>
             <div class=${classes.sub_card_body_three_content}>
                 <span class=${classes.sub_card_body_three_text}>OTC</span>
-                <span class=${classes.sub_card_body_three_text}>958589484984</span>
+                <span class=${classes.sub_card_body_three_text}>9984</span>
             </div>
             <div class=${classes.sub_card_body_three_content}>
                 <span class=${classes.sub_card_body_three_text}>Tx cost</span>
-                <span class=${classes.sub_card_body_three_text}>86959599595</span>
+                <span class=${classes.sub_card_body_three_text}>895495</span>
             </div>
         </div>
     `
@@ -61,7 +72,7 @@ const SubCardThree = () => {
 
 $(function() {
     var span3 = $(".sub_card_body_three_text:eq(1)");
-    span3.css("font-size", "2.5rem");
+    span3.css("font-size", "2rem");
 });
 
 

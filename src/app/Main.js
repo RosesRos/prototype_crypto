@@ -5,7 +5,6 @@ import Footer from "./Footer";
 import ModalTwo from "./modals/ModalTwo";
 
 
-
 const root = document.getElementById("root");
 
 

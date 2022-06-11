@@ -1,5 +1,6 @@
 import jss from "jss";
 import { colors } from "../Theme";
+import { query } from "../MediaQuery";
 
 const createGenerateId = () => {
     return (rule) => `${rule.key}`;
@@ -50,6 +51,16 @@ const styles = {
     },
     active: {
         border: [1, "solid", `${colors.bgConnet}`],
+    },
+    [`@media (max-width: ${query.mobile}px)`]: {
+        sub_card_body_one: {
+            width: "30rem"
+        }
+    },
+    [`@media (max-width: ${query.mobileSm}px)`]: {
+        sub_card_body_one: {
+            width: "23rem"
+        }
     }
 }
 
@@ -60,11 +71,11 @@ const SubCardOne = () => {
         <div class="${classes.sub_card_body_one} ${classes.active}">
             <div class=${classes.sub_card_body_one_content}>
                 <span class=${classes.sub_card_body_one_text}>1 Linch</span>
-                <span class=${classes.sub_card_body_one_text}>488585.36377364</span>
+                <span class=${classes.sub_card_body_one_text}>48364</span>
             </div>
             <div class=${classes.sub_card_body_one_content}>
                 <span class=${classes.sub_card_body_one_text}>1 Linch</span>
-                <span class=${classes.sub_card_body_one_text}>488585.36377364</span>
+                <span class=${classes.sub_card_body_one_text}>466364</span>
             </div>
         </div>
     `
@@ -72,7 +83,7 @@ const SubCardOne = () => {
 
 $(function() {
     var span2 = $(".sub_card_body_one_text:eq(1)");
-    span2.css("font-size", "2.5rem");
+    span2.css("font-size", "2rem");
 })
 
 

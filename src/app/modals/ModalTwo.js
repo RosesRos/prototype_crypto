@@ -1,5 +1,6 @@
 import jss from "jss";
 import {colors} from "../Theme";
+import { query } from "../MediaQuery";
 
 const createGenerateId = () => {
     return (rule) => `${rule.key}`; 
@@ -118,7 +119,20 @@ const styles = {
         width: "5rem",
         height: "5rem",
         color: colors.white
-    }
+    },
+    [`@media (max-width: ${query.mobile}px)`]: {
+        modal_one: {
+            padding: [0, "1rem"]
+        }
+    },
+    [`@media (max-width: ${query.mobileSm}px)`]: {
+        modal_one_card: {
+            padding: ["1rem", "1rem"],
+        },
+        modal_one_card_content: {
+            margin: "0.2rem",
+        }
+    },
 }
 
 const {classes} = jss.createStyleSheet(styles).attach();
