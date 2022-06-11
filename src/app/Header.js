@@ -5,6 +5,7 @@ import MenuBtn from "./header_app/MenuBtn";
 import Burger from "./header_app/Burger";
 
 
+
 const createGenerateId = () => {
     return (rule) => `${rule.key}`; 
 }

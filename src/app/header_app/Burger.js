@@ -1,6 +1,7 @@
 import jss from "jss";
 import { colors } from "../Theme";
 import { query } from "../MediaQuery";
+import * as $ from "jquery";
 
 
 const createGenerateId = () => {
@@ -51,5 +52,13 @@ const Burger = () => {
         </button>
     `
 }
+
+
+$(function() {
+    var nav = $(".nav");
+    $(".burger").on("click", function() {
+        nav.css("height", "100%");
+    });
+});
 
 export default Burger;
