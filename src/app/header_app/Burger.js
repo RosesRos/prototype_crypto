@@ -57,7 +57,7 @@ const Burger = () => {
 $(function() {
     var nav = $(".nav");
     $(".burger").on("click", function() {
-        nav.css("height", "100%");
+        nav.toggle(1000);
     });
 });
 

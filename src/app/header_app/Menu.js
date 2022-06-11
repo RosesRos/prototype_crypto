@@ -87,8 +87,9 @@ const styles = {
     },
     [`@media (max-width: ${query.desktop}px)`]: {
         nav: {
+            display: "none",
             marginRight: "2%",
-            height: 0,
+            height: "100%",
             width: "100%",
             position: "fixed",
             top: 0,
@@ -97,8 +98,8 @@ const styles = {
             fallbacks: {
                 backgroundColor: "rgb(0, 0, 0)"
             },
-            overflowY: "hidden",
-            transition: ["0.5s", "linear"],
+            // overflowY: "hidden",
+            // transition: ["0.5s", "linear"],
             zIndex: 10,
         },
         nav_list: {
