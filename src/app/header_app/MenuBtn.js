@@ -104,6 +104,13 @@ const styles = {
             paddingRight: 0,
         }
     },
+    [`@media (max-width: ${query.mobileSm}px)`]: {
+        nav_btn_content: {
+            "&:nth-child(1)": {
+                display: "none",
+            },
+        },
+    },
 }
 
 const {classes} = jss.createStyleSheet(styles).attach();
