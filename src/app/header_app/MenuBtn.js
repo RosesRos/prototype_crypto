@@ -102,6 +102,7 @@ const styles = {
     [`@media (max-width: ${query.mobile}px)`]: {
         nav_btn_list: {
             paddingRight: 0,
+            paddingLeft: 0,
         }
     },
     [`@media (max-width: ${query.mobileSm}px)`]: {
