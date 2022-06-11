@@ -68,6 +68,11 @@ const styles = {
             width: "55%",
         }
     },
+    [`@media (max-width: ${query.mobileSm}px)`]: {
+        card_body_first_input: {
+            width: "50%",
+        }
+    },
 }
 
 const {classes} = jss.createStyleSheet(styles).attach();
