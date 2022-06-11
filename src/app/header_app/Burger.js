@@ -15,7 +15,7 @@ const styles = {
     burger: {
         display: "none",
         // paddingTop: "0.5rem",
-        position: "absolute",
+        position: "fixed",
         top: "2.5rem",
         right: "2rem",
         zIndex: 11,
@@ -24,6 +24,9 @@ const styles = {
         border: "none",
         background: "transparent",
         padding: 0,
+        "&:hover": {
+            cursor: "pointer"
+        }
     },
     burger_item: {
         display: "block",

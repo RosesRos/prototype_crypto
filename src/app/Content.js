@@ -3,6 +3,7 @@ import { colors } from "./Theme";
 import CardOne from "./content_app/CardOne";
 import CardTwo from "./content_app/CardTwo";
 import cardBtn from "./content_app/CardBtn";
+import { query } from "./MediaQuery";
 
 const createGenerateId = () => {
     return (rule) => `${rule.key}`; 
@@ -105,7 +106,13 @@ const styles = {
             transform: "rotate(180deg)",
             cursor: "pointer",
         }
-    }
+    },
+    [`@media (max-width: ${query.mobile}px)`]: {
+        section_inner: {
+            paddingBottom: "10rem",
+            top: "10%"
+        }
+    },
 }
 
 const {classes} = jss.createStyleSheet(styles).attach();

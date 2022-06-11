@@ -99,6 +99,11 @@ const styles = {
             paddingRight: "5rem",
         }
     },
+    [`@media (max-width: ${query.mobile}px)`]: {
+        nav_btn_list: {
+            paddingRight: 0,
+        }
+    },
 }
 
 const {classes} = jss.createStyleSheet(styles).attach();

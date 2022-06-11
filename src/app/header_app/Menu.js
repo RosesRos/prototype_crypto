@@ -89,7 +89,7 @@ const styles = {
         nav: {
             display: "none",
             marginRight: "2%",
-            height: "100%",
+            height: "100vh",
             width: "100%",
             position: "fixed",
             top: 0,

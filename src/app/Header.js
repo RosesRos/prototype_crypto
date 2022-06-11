@@ -3,6 +3,7 @@ import Logo from "./header_app/Logo";
 import Menu from "./header_app/Menu";
 import MenuBtn from "./header_app/MenuBtn";
 import Burger from "./header_app/Burger";
+import { query } from "./MediaQuery";
 
 
 
@@ -21,7 +22,15 @@ const styles = {
         justifyContent: "space-between",
         alignItems: "flex-start",
         paddingTop: "1rem",
-    }
+    },
+    header_inner_child: {
+        display: "block"
+    },
+    [`@media (max-width:${query.mobile}px)`]: {
+        header_inner_child: {
+            display: "none"
+        },
+    },
 }
 
 const {classes} = jss.createStyleSheet(styles).attach();
@@ -33,7 +42,7 @@ const Header = () => {
             <div class=${classes.header_inner}>
                 ${Logo()}
                 ${Menu()}
-                ${MenuBtn()}
+                <div class=${classes.header_inner_child}>${MenuBtn()}</div>
                 ${Burger()}
             </div>
         </header>

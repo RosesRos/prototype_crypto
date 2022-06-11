@@ -1,7 +1,9 @@
 import jss from "jss";
 import Header from "./Header";
 import Content from "./Content";
+import Footer from "./Footer";
 import ModalTwo from "./modals/ModalTwo";
+
 
 
 const root = document.getElementById("root");
@@ -24,6 +26,7 @@ const Main = () => {
         ${Header()}
         ${Content()}
         ${ModalTwo()}
+        ${Footer()}
     `
 };
 
