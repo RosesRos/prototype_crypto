@@ -4,9 +4,6 @@ import { Ethe } from "./DataMenu";
 import { query } from "../MediaQuery";
 import * as $ from "jquery";
 
-// // components 
-
-// import Burger from "./Burger";
 
 const createGenerateId = () => {
     return (rule) => `${rule.key}`; 
