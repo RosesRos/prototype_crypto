@@ -119,7 +119,7 @@ module.exports = {
         open: true,
         compress: true,
         hot: true,
-        port: 9093,
+        port: 9094,
     },
     plugins: plugins(),
     module: {

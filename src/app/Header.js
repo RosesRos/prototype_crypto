@@ -2,6 +2,7 @@ import jss from "jss";
 import Logo from "./header_app/Logo";
 import Menu from "./header_app/Menu";
 import MenuBtn from "./header_app/MenuBtn";
+import Burger from "./header_app/Burger";
 
 
 const createGenerateId = () => {
@@ -32,6 +33,7 @@ const Header = () => {
                 ${Logo()}
                 ${Menu()}
                 ${MenuBtn()}
+                ${Burger()}
             </div>
         </header>
     `

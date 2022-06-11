@@ -5,7 +5,10 @@ import { Dao } from "./DataMenu";
 import { Ear } from "./DataMenu";
 import { More } from "./DataMenu";
 import { Bridges } from "./DataMenu";
+import { query } from "../MediaQuery";
 import * as $ from "jquery";
+
+import Logo from "./Logo";
 
 const createGenerateId = () => {
     return (rule) => `${rule.key}`; 
@@ -16,7 +19,7 @@ jss.setup({createGenerateId});
 const styles = {
     nav: {
         overflow: "hidden",
-        marginRight: "20%",
+        marginRight: "15%",
     },
     nav_list: {
         display: "flex",
@@ -27,7 +30,10 @@ const styles = {
     },
     nav_content: {
         width: "10rem",
-        zIndex: 5
+        zIndex: 5,
+        "&:nth-child(1)": {
+            display: "none"
+        },
     },
     nav_item: {
         padding: "1rem",
@@ -78,6 +84,51 @@ const styles = {
     },
     arrow: {
         transform: "rotateX(150deg)",
+    },
+    [`@media (max-width: ${query.desktop}px)`]: {
+        nav: {
+            marginRight: "2%",
+            height: 0,
+            width: "100%",
+            position: "fixed",
+            top: 0,
+            left: 0,
+            backgroundColor: "rgba(0, 0, 0, 0.9)",
+            fallbacks: {
+                backgroundColor: "rgb(0, 0, 0)"
+            },
+            overflowY: "hidden",
+            transition: ["0.5s", "linear"],
+            zIndex: 10,
+        },
+        nav_list: {
+            flexDirection: "column",
+            padding: "1rem",
+        },
+        nav_content: {
+            width: "100%",
+            paddingBottom: "2rem",
+            borderBottom: [1, "solid"],
+            "&:nth-child(1)": {
+                display: "block",
+                padding: "1rem",
+                // paddingLeft: "2rem",
+                borderBottom: "none",
+            },
+        },
+        nav_list_sub: {
+            width: "100%",
+            // height: 0,
+            // display: "block",
+            margin: 0,
+            backgroundColor: "transparent"
+        },
+        nav_item: {
+            textAlign: "left",
+            "&:hover": {
+                backgroundColor: "transparent"
+            }
+        }
     }
 }
 
@@ -87,6 +138,9 @@ const Menu = () => {
     return `
         <nav class=${classes.nav}>
             <div class=${classes.nav_list}>
+                <div class=${classes.nav_content}>
+                    ${Logo()}
+                </div>
                 <div class=${classes.nav_content}>
                     <button class=${classes.nav_item}>
                         Trade <i class="fa-solid fa-angle-down"></i> 

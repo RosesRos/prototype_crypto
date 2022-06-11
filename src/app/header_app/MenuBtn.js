@@ -1,7 +1,12 @@
 import jss from "jss";
 import { colors } from "../Theme";
 import { Ethe } from "./DataMenu";
+import { query } from "../MediaQuery";
 import * as $ from "jquery";
+
+// // components 
+
+// import Burger from "./Burger";
 
 const createGenerateId = () => {
     return (rule) => `${rule.key}`; 
@@ -21,6 +26,7 @@ const styles = {
         paddingLeft: "1rem",
     },
     nav_btn_content: {
+        zIndex: 5,
         "&:nth-child(1)": {
             marginRight: "1rem",
         },
@@ -87,7 +93,12 @@ const styles = {
     },
     arrow: {
         transform: "rotateX(150deg)",
-    } 
+    },
+    [`@media (max-width: ${query.desktop}px)`]: {
+        nav_btn_list: {
+            paddingRight: "5rem",
+        }
+    },
 }
 
 const {classes} = jss.createStyleSheet(styles).attach();
@@ -115,6 +126,7 @@ const MenuBtn = () => {
                 <div class=${classes.nav_btn_content}>
                     <button class=${classes.nav_btn_item}><i class="fa-solid fa-gear"></i></button>
                 </div>
+                
             </div>
         </nav>
     `
