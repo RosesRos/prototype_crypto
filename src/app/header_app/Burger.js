@@ -58,7 +58,7 @@ const { classes } = jss.createStyleSheet(styles).attach();
 
 const Burger = () => {
     return `
-        <button class=${classes.burger}>
+        <button class=${classes.burger} id="nav">
             <span class=${classes.burger_item}></span>
             <span class=${classes.burger_item}></span>
             <span class=${classes.burger_item}></span>
