@@ -136,7 +136,6 @@ const MenuBtn = () => {
                 <div class=${classes.nav_btn_content}>
                     <button class=${classes.nav_btn_item}><i class="fa-solid fa-gear"></i></button>
                 </div>
-                
             </div>
         </nav>
     `
@@ -145,7 +144,7 @@ const MenuBtn = () => {
 $(function() {
     var btnFirst = $(".nav_btn_item_first");
     var btnSecond = $(".nav_btn_item:eq(0)")
-
+    
     btnFirst.css("color", `${colors.white}`);
     btnFirst.on("click", function() {
         var items = $(".nav_list_sub_btn");
