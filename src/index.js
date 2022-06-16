@@ -6,7 +6,6 @@ import "@/styles/main";
 Jss();
 Main();
 
-
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     let currentScrollpos = window.pageYOffset;
