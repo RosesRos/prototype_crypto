@@ -59,6 +59,21 @@ const styles = {
         fontSize: "2.4rem",
         padding: "0!important",
         width: "65%",
+        "-webkit-appearance": "textfield",
+        "-moz-appearance": "textfield",
+        appearance: "textfield",
+        "&:focus": {
+            // backgroundColor: "transparent",
+            outline: "none",
+            border: "none",
+            // color: "red",
+        },
+        "&::-webkit-outer-spin-button": {
+            display: "none",
+        },
+        "&::-webkit-inner-spin-button": {
+            display: "none",
+        }
     },
     arrow: {
         transform: "rotate(180deg)",
@@ -88,11 +103,11 @@ const CardOne = () => {
                 <i class="fa-brands fa-ethereum"></i>
                 ETH
                 <i class="fa-solid fa-angle-down"></i> </button>
-            <input class=${classes.card_body_first_input} type="text" placeholder="0"></input>
+            <input class=${classes.card_body_first_input} type="number" id="lnum" name="lnum" placeholder="0"></input>
         </div>
         <div class=${classes.card_body_first_content}>
             <span class=${classes.card_body_first_text}>Ethereum</span>
-            <span class=${classes.card_body_first_num}>75895858</span>
+            <span class=${classes.card_body_first_num}></span>
         </div>
     </div>
     `

@@ -117,12 +117,48 @@ const styles = {
         card: {
             maxWidth: "30rem",
         }
+    },
+    err: {
+        color: "red",
     }
 }
 
 const {classes} = jss.createStyleSheet(styles).attach();
 
 const Content = () => {
+
+    fetch('https://api.coingecko.com/api/v3/exchange_rates')
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error(`HTTP : ${response.status}`)
+            }
+            return response.json()
+        })
+        .then((exchange_rates) => {
+            let inp = document.getElementById('lnum');
+            let val = document.querySelector('.card_body_first_num');
+
+            val.innerHTML = `${exchange_rates.rates.eth.value}` + " " + '$';
+
+            inp.addEventListener('input', (e) => {
+                if (!e.target.value == 0) {
+                    val.innerHTML = `${exchange_rates.rates.eth.value}` * e.target.value + " " + '$';
+                } else {
+                    val.innerHTML = `${exchange_rates.rates.eth.value}` + " " + '$';
+                }
+            })
+        })
+        .catch((error) => {
+            const er = document.querySelector('.card_body_first_content');
+            const err = document.createElement('h2');
+            err.setAttribute('class', `${classes.err}`);
+            err.innerHTML = error;
+
+
+            er.appendChild(err);
+        })
+
+
     return `
         <section class=${classes.section}>
             <div class=${classes.section_inner}>
