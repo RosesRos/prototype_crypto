@@ -136,15 +136,19 @@ const Content = () => {
         })
         .then((exchange_rates) => {
             let inp = document.getElementById('lnum');
-            let val = document.querySelector('.card_body_first_num');
+            let et = document.querySelector('.card_body_first_num');
+            let bt = document.getElementById('Btc');
+            let btc = document.getElementById('btc');
 
-            val.innerHTML = `${exchange_rates.rates.eth.value}` + " " + '$';
+            et.innerHTML = `${exchange_rates.rates.eth.value}` + " " + '$';
+            btc.innerHTML = `${exchange_rates.rates.btc.value}`;
+            bt.innerHTML = `${exchange_rates.rates.btc.value}` + " " + '$';
 
             inp.addEventListener('input', (e) => {
                 if (!e.target.value == 0) {
-                    val.innerHTML = `${exchange_rates.rates.eth.value}` * e.target.value + " " + '$';
+                    et.innerHTML = `${exchange_rates.rates.eth.value}` * e.target.value + " " + '$';
                 } else {
-                    val.innerHTML = `${exchange_rates.rates.eth.value}` + " " + '$';
+                    et.innerHTML = `${exchange_rates.rates.eth.value}` + " " + '$';
                 }
             })
         })

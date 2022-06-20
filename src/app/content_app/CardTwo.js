@@ -84,7 +84,7 @@ const CardTwo = () => {
             <div class=${classes.card_body_second_content}>
                 <button class=${classes.card_body_second_btn}>
                     <i class="fa-solid fa-euro-sign"></i>
-                    DAI
+                    BTC
                     <i class="fa-solid fa-angle-down"></i></button>
             </div>
             <div class=${classes.card_body_three_content}>

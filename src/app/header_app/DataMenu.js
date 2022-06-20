@@ -138,7 +138,7 @@ export const Ethe = [
     },
     {
         id: 2,
-        ethe: "BNB Chain",
+        ethe: "Bitcoin",
         img: `<i class="fa-solid fa-link"></i>`,
     },
     {

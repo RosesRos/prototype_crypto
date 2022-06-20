@@ -71,11 +71,11 @@ const SubCardOne = () => {
         <div class="${classes.sub_card_body_one} ${classes.active}">
             <div class=${classes.sub_card_body_one_content}>
                 <span class=${classes.sub_card_body_one_text}>1 Linch</span>
-                <span class=${classes.sub_card_body_one_text}>48364</span>
+                <span class=${classes.sub_card_body_one_text} id="btc"></span>
             </div>
             <div class=${classes.sub_card_body_one_content}>
                 <span class=${classes.sub_card_body_one_text}>1 Linch</span>
-                <span class=${classes.sub_card_body_one_text}>466364</span>
+                <span class=${classes.sub_card_body_one_text} id="Btc"></span>
             </div>
         </div>
     `
