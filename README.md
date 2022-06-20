@@ -11,6 +11,6 @@ this project presents a simple prototype of web app for crypto
 - Pug for html
 - Webpack for bandler
 - Sass for global styles
-- [coingecko.com/en/api](https://www.coingecko.com/en/api) for crypto infomation
+- [coingecko.com - Api](https://www.coingecko.com/en/api) for crypto infomation
 
 you can view version [DEMO](https://facesar.github.io/prototype_crypto/dist/)
