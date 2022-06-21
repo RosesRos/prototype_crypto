@@ -162,6 +162,36 @@ const Content = () => {
             er.appendChild(err);
         })
 
+    fetch('https://api.coingecko.com/api/v3/global')
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error(`HTTP : ${response.status}`);
+            }
+            return response.json();
+        })
+        .then((global) => {
+            let uni = document.getElementById('uni');
+            let uniTotal = document.getElementById('uniTotal');
+
+            let ot = document.getElementById('ot');
+            let otc = document.getElementById('otc');
+
+
+            uni.innerHTML = global.data.market_cap_percentage.btc;
+            uniTotal.innerHTML = global.data.market_cap_change_percentage_24h_usd;
+
+            ot.innerHTML = global.data.market_cap_percentage.btc;
+
+            otc.innerHTML = global.data.market_cap_percentage.btc / global.data.market_cap_change_percentage_24h_usd;
+        })
+        .catch((error) => {
+            const er = document.querySelector('.card_body_first_content');
+            const err = document.createElement('h2');
+            err.setAttribute('class', `${classes.err}`);
+            err.innerHTML = error;
+
+            er.appendChild(err);
+        })
 
     return `
         <section class=${classes.section}>

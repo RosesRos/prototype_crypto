@@ -60,11 +60,11 @@ const SubCardThree = () => {
         <div class=${classes.sub_card_body_three}>
             <div class=${classes.sub_card_body_three_content}>
                 <span class=${classes.sub_card_body_three_text}>OTC</span>
-                <span class=${classes.sub_card_body_three_text}>9984</span>
+                <span class=${classes.sub_card_body_three_text} id="ot"></span>
             </div>
             <div class=${classes.sub_card_body_three_content}>
                 <span class=${classes.sub_card_body_three_text}>Tx cost</span>
-                <span class=${classes.sub_card_body_three_text}>895495</span>
+                <span class=${classes.sub_card_body_three_text} id="otc">895495</span>
             </div>
         </div>
     `

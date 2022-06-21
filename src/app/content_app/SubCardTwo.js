@@ -72,11 +72,11 @@ const SubCardTwo = () => {
         <div class=${classes.sub_card_body_two}>
             <div class=${classes.sub_card_body_two_content}>
                 <span class=${classes.sub_card_body_btn}>Uniswap <i class="fa-solid fa-angle-down"></i></span>
-                <span class=${classes.sub_card_body_two_text}>958546</span>
+                <span class=${classes.sub_card_body_two_text} id="uni"></span>
             </div>
             <div class=${classes.sub_card_body_two_content}>
                 <span class=${classes.sub_card_body_two_text}>Tx cost</span>
-                <span class=${classes.sub_card_body_two_text}>84944</span>
+                <span class=${classes.sub_card_body_two_text} id="uniTotal"></span>
             </div>
         </div>
     `
