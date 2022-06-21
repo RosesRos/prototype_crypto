@@ -156,7 +156,7 @@ const ModalTwo = () => {
                                 <div class=${classes.modal_one_card_block}>
                                     <button class=${classes.modal_one_card_block_btn}>
                                         <i class="fa-solid fa-euro-sign"></i>
-                                        <span class=${classes.modal_one_card_block_btn_span}>DAI</span>
+                                        <span class=${classes.modal_one_card_block_btn_span}>BTC</span>
                                     </button>
                                     <p class=${classes.modal_one_card_block_span}>Uniswap V2 100%</p>
                                 </div>
