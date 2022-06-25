@@ -16,6 +16,9 @@ body {
     color: var(--colorText);
     font-family: $font_1, sans-serif;
     background-color: var(--mainColor);
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 body::-webkit-scrollbar {
@@ -29,6 +32,49 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background: var(--colorText);
+    background: var(--colorScroll);
+    transition: background .2s linear;
+    &:hover {
+        background: var(--colorScrollHover);
+    }
+}
+
+
+body::-ms-scrollbar {
+    width: 0.6rem;
+}
+
+body::-ms-scrollbar-track {
+    box-shadow: 0.5rem 0.5rem 0.5rem -0.5rem rgba(34, 60, 80, 0.2) inset;
+    background-color: transparent;
+    border-radius: 1rem;
+}
+
+body::-ms-scrollbar-thumb {
+    border-radius: 1rem;
+    background: var(--colorText);
+    background: var(--colorScroll);
+    transition: background .2s linear;
+    &:hover {
+        background: var(--colorScrollHover);
+    }
+}
+
+
+
+body::-moz-scrollbar {
+    width: 0.6rem;
+}
+
+body::-moz-scrollbar-track {
+    box-shadow: 0.5rem 0.5rem 0.5rem -0.5rem rgba(34, 60, 80, 0.2) inset;
+    background-color: transparent;
+    border-radius: 1rem;
+}
+
+body::-moz-scrollbar-thumb {
     border-radius: 1rem;
     background: var(--colorText);
     background: var(--colorScroll);
