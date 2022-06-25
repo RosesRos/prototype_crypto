@@ -99,7 +99,7 @@ export const More = [
 export const Bridges = [
     {
         id: 1,
-        bridge: "BNB Chain bridge",
+        bridge: "BTC Chain bridge",
         img: `<i class="fa-solid fa-link"></i>`,
     },
     {
