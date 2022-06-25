@@ -35,7 +35,7 @@ export const Dao = [
     },
     {
         id: 3,
-        dao: "Aggregation Protocol",
+        dao: "Aggregation Prot",
         img: `<i class="fa-solid fa-fan"></i>`,
     },
     {
@@ -89,7 +89,7 @@ export const More = [
     },
     {
         id: 5,
-        more: "Skynet deployment",
+        more: "Sky deployment",
         img: `<i class="fa-solid fa-hand-holding-medical"></i>`,
     },
 ]
@@ -119,7 +119,7 @@ export const Bridges = [
     },
     {
         id: 5,
-        bridge: "Gnosis Chain bridge",
+        bridge: "Gnosis bridge",
         img: `<i class="fa-solid fa-dice-d20"></i>`,
     },
     {
