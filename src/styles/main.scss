@@ -8,6 +8,8 @@
     --colorStar: rgb(208, 24, 24);
     --wraper-margin: 0 auto;
     --colorSetting: #f8f8f8;
+    --colorScroll: #5C7295;
+    --colorScrollHover: #154392;
 }
   
 body {
@@ -15,6 +17,27 @@ body {
     font-family: $font_1, sans-serif;
     background-color: var(--mainColor);
 }
+
+body::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: 0.5rem 0.5rem 0.5rem -0.5rem rgba(34, 60, 80, 0.2) inset;
+    background-color: transparent;
+    border-radius: 1rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background: var(--colorText);
+    background: var(--colorScroll);
+    transition: background .2s linear;
+    &:hover {
+        background: var(--colorScrollHover);
+    }
+}
+
 
 .main {
     margin: var(--wraper-margin);
