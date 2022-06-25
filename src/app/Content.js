@@ -177,10 +177,10 @@ const Content = () => {
             let otc = document.getElementById('otc');
 
 
-            uni.innerHTML = global.data.market_cap_percentage.btc;
+            uni.innerHTML = global.data.ended_icos;
             uniTotal.innerHTML = global.data.market_cap_change_percentage_24h_usd;
 
-            ot.innerHTML = global.data.market_cap_percentage.btc;
+            ot.innerHTML = global.data.ongoing_icos;
 
             otc.innerHTML = global.data.market_cap_percentage.btc / global.data.market_cap_change_percentage_24h_usd;
         })
