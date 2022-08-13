@@ -5,8 +5,9 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "build:sass": "sass src/styles/main.scss src/styles/index.css",
     "dev": "cross-env NODE_ENV=development webpack --mode development",
-    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "build": "npm run build:sass && cross-env NODE_ENV=production webpack --mode production",
     "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
     "start": "webpack-dev-server --mode development --open",
     "stats": "webpack --json > stats.json && webpack-bundle-analyzer stats.json"

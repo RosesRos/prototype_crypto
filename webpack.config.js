@@ -5,7 +5,6 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
 const CssMinimizerWebpackPlugin = require("css-minimizer-webpack-plugin");
-// const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 const { webpack } = require("webpack");
 
 const isDev = process.env.NODE_ENV === "development";
@@ -16,7 +15,7 @@ const optimization = () => {
         splitChunks: {
             cacheGroups: {
                 styles: {
-                  name: "styles",
+                  name: "index",
                   type: "css/mini-extract",
                   chunks: "all",
                   enforce: true,
@@ -83,10 +82,6 @@ const plugins = () => {
             linkType: "text/css",
         }),
     ]
-
-    // if (isProd) {
-    //     base.push(new BundleAnalyzerPlugin())
-    // }
 
     if (isDev) {
         base.push(new webpack.HotModuleReplacementPlugin)

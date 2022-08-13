@@ -63,10 +63,8 @@ const styles = {
         "-moz-appearance": "textfield",
         appearance: "textfield",
         "&:focus": {
-            // backgroundColor: "transparent",
             outline: "none",
             border: "none",
-            // color: "red",
         },
         "&::-webkit-outer-spin-button": {
             display: "none",

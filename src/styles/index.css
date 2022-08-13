@@ -1,0 +1,142 @@
+@import "~normalize.css";
+@font-face {
+  font-family: "UbuntuLight";
+  src: url("../assets/fonts/Ubuntu-Light.woff2") format(truetype);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "UbuntuRegular";
+  src: url("../assets/fonts/Ubuntu-Regular.woff2") format(truetype);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "UbuntuMedium";
+  src: url("../assets/fonts/Ubuntu-Medium.woff2") format(truetype);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "UbuntuBold";
+  src: url("../assets/fonts/Ubuntu-Bold.woff2") format(truetype);
+  font-weight: 700;
+}
+:root {
+  --mainColor: #080E18;
+  --colorText: #5C7295;
+  --colorStar: rgb(208, 24, 24);
+  --wraper-margin: 0 auto;
+  --colorSetting: #f8f8f8;
+  --colorScroll: #5C7295;
+  --colorScrollHover: #154392;
+}
+
+body {
+  color: var(--colorText);
+  font-family: "UbuntuLight", sans-serif;
+  background-color: var(--mainColor);
+}
+body.no-scroll {
+  overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: 0.5rem 0.5rem 0.5rem -0.5rem rgba(34, 60, 80, 0.2) inset;
+  background-color: transparent;
+  border-radius: 1rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: var(--colorText);
+  background: var(--colorScroll);
+  transition: background 0.2s linear;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--colorScrollHover);
+}
+
+body::-ms-scrollbar {
+  width: 0.6rem;
+}
+
+body::-ms-scrollbar-track {
+  box-shadow: 0.5rem 0.5rem 0.5rem -0.5rem rgba(34, 60, 80, 0.2) inset;
+  background-color: transparent;
+  border-radius: 1rem;
+}
+
+body::-ms-scrollbar-thumb {
+  border-radius: 1rem;
+  background: var(--colorText);
+  background: var(--colorScroll);
+  transition: background 0.2s linear;
+}
+body::-ms-scrollbar-thumb:hover {
+  background: var(--colorScrollHover);
+}
+
+body::-moz-scrollbar {
+  width: 0.6rem;
+}
+
+body::-moz-scrollbar-track {
+  box-shadow: 0.5rem 0.5rem 0.5rem -0.5rem rgba(34, 60, 80, 0.2) inset;
+  background-color: transparent;
+  border-radius: 1rem;
+}
+
+body::-moz-scrollbar-thumb {
+  border-radius: 1rem;
+  background: var(--colorText);
+  background: var(--colorScroll);
+  transition: background 0.2s linear;
+}
+body::-moz-scrollbar-thumb:hover {
+  background: var(--colorScrollHover);
+}
+
+.main {
+  margin: var(--wraper-margin);
+  overflow: hidden;
+}
+
+.fa-angle-down {
+  padding-left: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.fa-star {
+  color: var(--colorStar);
+  font-size: 0.5rem;
+}
+
+.fa-ethereum {
+  padding-right: 1rem;
+}
+
+.fa-wallet {
+  padding-right: 1rem;
+}
+
+.fa-gear:hover {
+  color: var(--colorSetting);
+}
+
+.burger.burger_active .burger_item:nth-child(1) {
+  transform-origin: left top;
+  transform: rotate(45deg) translateY(8px);
+  width: 75%;
+}
+.burger.burger_active .burger_item:nth-child(2) {
+  opacity: 0;
+}
+.burger.burger_active .burger_item:nth-child(3) {
+  transform-origin: bottom left;
+  transform: rotate(-45deg) translateY(2px);
+  width: 75%;
+}
+
+/*# sourceMappingURL=index.css.map */

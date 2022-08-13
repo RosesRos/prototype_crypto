@@ -56,17 +56,11 @@ const styles = {
         height: "100%",
     },
     [`@media (max-width: ${query.mobile}px)`]: {
-        // card_body_three_content: {
-        //     height: "20.5rem",
-        // },
         active1: {
             height: "100%",
         },
     },
     [`@media (max-width: ${query.mobileSm}px)`]: {
-        // card_body_three_content: {
-        //     height: "20.5rem",
-        // },
         active1: {
             height: "100%",
         },

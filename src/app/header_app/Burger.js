@@ -14,7 +14,6 @@ jss.setup({createGenerateId});
 const styles = {
     burger: {
         display: "none",
-        // paddingTop: "0.5rem",
         position: "fixed",
         top: "2.5rem",
         right: "2rem",

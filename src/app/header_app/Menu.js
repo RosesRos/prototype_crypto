@@ -98,8 +98,6 @@ const styles = {
             fallbacks: {
                 backgroundColor: "rgb(0, 0, 0)"
             },
-            // overflowY: "hidden",
-            // transition: ["0.5s", "linear"],
             zIndex: 10,
         },
         nav_list: {
@@ -113,14 +111,11 @@ const styles = {
             "&:nth-child(1)": {
                 display: "block",
                 padding: "1rem",
-                // paddingLeft: "2rem",
                 borderBottom: "none",
             },
         },
         nav_list_sub: {
             width: "100%",
-            // height: 0,
-            // display: "block",
             margin: 0,
             backgroundColor: "transparent"
         },
