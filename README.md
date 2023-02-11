@@ -13,4 +13,4 @@ this project presents a simple prototype of web app for crypto
 - Sass for global styles
 - [coingecko.com - Api](https://www.coingecko.com/en/api) for crypto infomation
 
-you can view version [DEMO](https://facesar.github.io/prototype_crypto/dist/)
+you can view version [DEMO](https://RosesRos.github.io/prototype_crypto/dist/)
